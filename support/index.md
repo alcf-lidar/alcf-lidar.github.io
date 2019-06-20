@@ -13,12 +13,12 @@ Peter Kuma &lt;peter.kuma<span>@</span>fastmail.com&gt;.
 ### Bugs
 
 If you have found a bug in ALCF and want to request a feature,
-please [submit a new issue on Github](https://github.com/peterkuma/alcf/issues).
+please [submit a new issue on Github](https://github.com/alcf-lidar/alcf/issues).
 
 ### Contributing
 
 Contributions of code and documentation are most welcome. [Submit a pull request
-on Github](https://github.com/peterkuma/alcf/pulls) or get in touch by e-mail.
+on Github](https://github.com/alcf-lidar/alcf/pulls) or get in touch by e-mail.
 
 #### Suggested contributions
 
