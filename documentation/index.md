@@ -12,3 +12,4 @@ layout: default
 3. [Model guide](model_guide/)
 4. [ALCF output](alcf_output/)
 5. [Calibration](calibration/)
+6. [Lidar simulator](lidar_simulator/)
