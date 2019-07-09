@@ -15,5 +15,5 @@ If you want to add support for another lidar in ALCF, you might have to
 calculate Mie scattering parameters for the lidar wavelength, if it
 is different from ones already implemented (532, 910, 1064 nm).
 The code for calculating the parameters is located in
-[github.com/alcf-lidar/alcf/mie_scattering](https://github.com/alcf-lidar/alcf/mie_scattering)
+[github.com/alcf-lidar/alcf/mie_scattering](https://github.com/alcf-lidar/alcf/tree/master/mie_scattering)
 (TODO).
