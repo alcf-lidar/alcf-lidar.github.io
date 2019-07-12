@@ -18,15 +18,14 @@ The code for calculating the parameters is located in
 [github.com/alcf-lidar/alcf/mie_scattering](https://github.com/alcf-lidar/alcf/tree/master/mie_scattering).
 Below is documentation on how to use this code.
 
-Mie scattering
-==============
+## Mie scattering code
 
 The `mie_scattering` directory in ALCF contains code for calculation of Mie
 scattering parameters required by the COSP/ACTSIM lidar simulator.
 The code requires Python 3 and GNU Fortran (gfortran) for running.
 The code is independent from the rest of ALCF.
 
-## Overview
+### Overview
 
 The code uses the Mie scattering code MIEV by Warren J Wiscombe to calculate
 extinction efficiency, scattering efficiency and the scattering phase function
@@ -39,7 +38,7 @@ in the COSP/ACTSIM lidar simulator code (`actsim/mie_backscatter_*.F90` files
 included from `actsim/lidar_simulator.F90`). The lidar ratio can be plotted by
 `plot_lr`.
 
-## MIEV
+### MIEV
 
 `miev` contains the MIEV Mie scattering code by Dr. Warren J. Wiscombe
 (see `miev/MIEV.doc` for documentation). We use MIEV to calculate the
@@ -88,7 +87,9 @@ miev/miev 910 > out/miev_910
 miev/miev 1064 > out/miev_1064
 ```
 
-### plot_size_dist
+### Scripts
+
+#### plot_size_dist
 
 Plot theoretical particle size distribution (log-normal or Gamma).
 
@@ -112,7 +113,7 @@ bin/plot_size_dist { lognorm 20 10 } { lognorm 20 5 } { lognorm 10 5 } plot/size
 bin/plot_size_dist { gamma 20 10 } { gamma 20 5 } { gamma 10 5 } plot/size_dist_gamma.pdf
 ```
 
-## calc_k
+#### calc_k
 
 Calculate the scattering-to-extinction ratio k (inverse of the lidar ratio)
 by integrating Mie scattering parameters over a range of particle radii.
@@ -139,7 +140,7 @@ bin/calc_k out/miev_910 gamma out/k_gamma_910.nc
 bin/calc_k out/miev_1064 gamma out/k_gamma_1064.nc
 ```
 
-## plot_lr
+#### plot_lr
 
 Plot lidar ratio calculated by calc_k.
 
