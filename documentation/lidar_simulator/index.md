@@ -6,6 +6,8 @@ layout: default
 ### [Documentation](../)
 ## Lidar simulator
 
+### Introduction
+
 ALCF uses a modified version of COSPv1 for lidar simulation, which can
 be found at [github.com/peterkuma/COSPv1](https://github.com/peterkuma/COSPv1).
 The ACTSIM lidar simulator included in COSP has been modified to account
@@ -18,14 +20,14 @@ The code for calculating the parameters is located in
 [github.com/alcf-lidar/alcf/mie_scattering](https://github.com/alcf-lidar/alcf/tree/master/mie_scattering).
 Below is documentation on how to use this code.
 
-## Mie scattering code
+### Mie scattering code
 
 The `mie_scattering` directory in ALCF contains code for calculation of Mie
 scattering parameters required by the COSP/ACTSIM lidar simulator.
 The code requires Python 3 and GNU Fortran (gfortran) for running.
 The code is independent from the rest of ALCF.
 
-### Overview
+#### Overview
 
 The code uses the Mie scattering code MIEV by Warren J Wiscombe to calculate
 extinction efficiency, scattering efficiency and the scattering phase function
@@ -38,7 +40,7 @@ in the COSP/ACTSIM lidar simulator code (`actsim/mie_backscatter_*.F90` files
 included from `actsim/lidar_simulator.F90`). The lidar ratio can be plotted by
 `plot_lr`.
 
-### MIEV
+#### MIEV
 
 `miev` contains the MIEV Mie scattering code by Dr. Warren J. Wiscombe
 (see `miev/MIEV.doc` for documentation). We use MIEV to calculate the
@@ -86,8 +88,6 @@ miev/miev 532 > out/miev_532
 miev/miev 910 > out/miev_910
 miev/miev 1064 > out/miev_1064
 ```
-
-### Scripts
 
 #### plot_size_dist
 
