@@ -29,8 +29,9 @@ The code is independent from the rest of ALCF.
 
 #### Overview
 
-The code uses the Mie scattering code MIEV by Warren J Wiscombe to calculate
-extinction efficiency, scattering efficiency and the scattering phase function
+The code uses the Mie scattering code MIEV by Dr. Warren J. Wiscombe to
+calculate extinction efficiency, scattering efficiency and the scattering phase
+function
 at 180 degrees as function of particule radius. The output of MIEV is then
 used as input in `calc_k`, which calculates the backscatter-to-extinction
 ratio k (the inverse of the lidar ratio) by integrating over a range
@@ -39,6 +40,17 @@ The calculated backscatter-to-extinction ratio is used as a lookup table
 in the COSP/ACTSIM lidar simulator code (`actsim/mie_backscatter_*.F90` files
 included from `actsim/lidar_simulator.F90`). The lidar ratio can be plotted by
 `plot_lr`.
+
+The code should be used in the following order:
+
+- miev
+- plot_size_dist
+- calc_k
+- plot_lr
+
+The variable `k` in the NetCDF file produced by `calc_k` should be the content
+of the lookup table `actsim/mie_backscatter_*.F90`, and the lookup table
+should be included from `actsim/lidar_simulator.F90`.
 
 #### MIEV
 
@@ -97,7 +109,7 @@ Usage: `bin/plot_size_dist { <type> <reff> <sigmaeff> }... <output> [num: <num>]
 
 Arguments:
 
-- `type` – distribution type: `log-norm` or `gamma`
+- `type` – distribution type: `lognorm` or `gamma`
 - `reff` – effective radius (μm)
 - `sigmaeff` – effective standard deviation (μm)
 - `output` – output plot filename (PDF)
