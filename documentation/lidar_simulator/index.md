@@ -127,7 +127,7 @@ bin/plot_size_dist { gamma 20 10 } { gamma 20 5 } { gamma 10 5 } plot/size_dist_
 
 #### calc_k
 
-Calculate the scattering-to-extinction ratio k (inverse of the lidar ratio)
+Calculate the backscatter-to-extinction ratio k (inverse of the lidar ratio)
 by integrating Mie scattering parameters over a range of particle radii.
 
 Usage: `bin/calc_k <input> <type> <output> [sigmaeff_ratio: <sigmaeff_ratio>]`
@@ -135,7 +135,7 @@ Usage: `bin/calc_k <input> <type> <output> [sigmaeff_ratio: <sigmaeff_ratio>]`
 Arguments:
 
 - `input` – file containing Mie scattering parameters calculated by
-    MIEV (see below)
+    MIEV (see above)
 - `type` – type of particle size distribution: `lognorm` or `gamma`
 - `output` – output file (NetCDF)
 - `sigmaeff_ratio` – Ratio of effective standard deviation to effective radius.
