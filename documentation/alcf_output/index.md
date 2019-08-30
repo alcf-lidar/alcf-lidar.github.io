@@ -72,6 +72,7 @@ backscatter_mol_avg | total attenuated molecular backscatter coefficient average
 backscatter_sd_full | total attenuated backscatter coefficient standard deviation | backscatter_sd_full | m<sup>-1</sup>.sr<sup>-1</sup>
 backscatter_sd_hist | total attenuated backscatter coefficient standard deviation histogram | backscatter_sd_full | %
 backscatter_sd_z | total attenuated backscatter coefficient standard deviation height above reference ellipsoid | m
-cloud_occurrence | cloud occurrence | zfull | %
+cl | cloud_area_fraction_in_atmosphere_layer | zfull | %
+clt | cloud_area_fraction | | %
 n | number of profiles | | 1
 zfull | height above reference ellipsoid | zfull | m
