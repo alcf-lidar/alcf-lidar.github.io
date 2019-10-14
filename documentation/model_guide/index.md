@@ -121,8 +121,8 @@ model output variables needed are:
 
 **Source:** `alcf/models/um.py`
 
-The NetCDF output (`l_netcdf`) of the UK Met Office is supported. The following
-variables are required:
+The NetCDF output (`l_netcdf`) of the UK Met Office Unified Model is supported.
+The following variables are required:
 
 - TALLTS (time)
 - latitude_t (latitude)
