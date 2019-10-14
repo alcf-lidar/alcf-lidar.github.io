@@ -16,8 +16,8 @@ over a length of time or along a ship track.
 
 Variable | Description | Dimensions | Units
 --- | --- | --- | ---
+cl | cloud area fraction in atmosphere layer | time, level | %
 cli | mass fraction of cloud ice in air | time, level | 1
-clt | cloud area fraction | time, level | %
 clw | mass fraction of cloud liquid water in air | time, level | 1
 lat | latitude | time | degrees north
 lon | longitude | time | degrees east
@@ -26,7 +26,7 @@ pfull | air pressure | time, level | Pa
 ps | surface air pressure | time | Pa
 ta | air temperature | time, level | K
 time | time | time | days since -4712-01-01 12:00
-zg | geopotential height | time, level | m
+zfull | height above reference ellipsoid | time, level | m
 
 ### cosp
 
@@ -72,7 +72,7 @@ backscatter_mol_avg | total attenuated molecular backscatter coefficient average
 backscatter_sd_full | total attenuated backscatter coefficient standard deviation | backscatter_sd_full | m<sup>-1</sup>.sr<sup>-1</sup>
 backscatter_sd_hist | total attenuated backscatter coefficient standard deviation histogram | backscatter_sd_full | %
 backscatter_sd_z | total attenuated backscatter coefficient standard deviation height above reference ellipsoid | m
-cl | cloud_area_fraction_in_atmosphere_layer | zfull | %
-clt | cloud_area_fraction | | %
+cl | cloud area fraction in atmosphere layer | zfull | %
+clt | cloud area fraction | | %
 n | number of profiles | | 1
 zfull | height above reference ellipsoid | zfull | m

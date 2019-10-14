@@ -9,8 +9,9 @@ layout: default
 The following GCM, NWP models and reanalyses are supported:
 
 - [AMPS](http://www2.mmm.ucar.edu/rt/amps/)
-- [MERRA2](https://duckduckgo.com/?q=merra-2&t=ffab&ia=web)
+- [MERRA2](https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/)
 - [NZCSM](https://www.nesi.org.nz/case-studies/improving-new-zealands-weather-forecasting-ability)
+- [UM](https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/index)
 
 TODO:
 
@@ -115,3 +116,25 @@ model output variables needed are:
 - mass_fraction_of_cloud_ice_in_air
 - mass_fraction_of_cloud_liquid_water_in_air
 - time
+
+### UM
+
+**Source:** `alcf/models/um.py`
+
+The NetCDF output (`l_netcdf`) of the UK Met Office is supported. The following
+variables are required:
+
+- TALLTS (time)
+- latitude_t (latitude)
+- longitude_t (longitude)
+- DALLTH_zsea_theta (Height above mean sea level)
+- STASH_m01s00i265 (AREA CLOUD FRACTION IN EACH LAYER)
+- STASH_m01s00i408 (PRESSURE AT THETA LEVELS AFTER TS)
+- STASH_m01s00i409 (SURFACE PRESSURE AFTER TIMESTEP)
+- STASH_m01s04i205 (CLOUD LIQUID WATER AFTER LS PRECIP)
+- STASH_m01s04i206 (CLOUD ICE CONTENT AFTER LS PRECIP)
+- STASH_m01s16i004 (TEMPERATURE ON THETA LEVELS)
+
+The variables should be provided on all theta levels and as high temporal
+sampling as possible (instantaneous). All variables should be dumped together
+to the same NetCDF file, split by time into arbitrary number of files.

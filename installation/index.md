@@ -48,7 +48,7 @@ To install in system directories:
 ```sh
 pip3 install https://github.com/peterkuma/ds-python/archive/master.zip \
     https://github.com/peterkuma/aquarius-time/archive/master.zip \
-    https://github.com/peterkuma/pst/archive/master.zip \
+    https://github.com/peterkuma/pst/archive/master.zip
 python3 setup.py install
 ```
 
