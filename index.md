@@ -8,6 +8,7 @@ ALCF is an open source command line tool for processing of automatic lidar and c
 </p>
 
 [Presentation (PDF)](presentation.pdf)
+[Poster (PDF)](poster.pdf)
 
 ### Features
 
