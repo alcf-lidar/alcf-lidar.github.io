@@ -11,14 +11,12 @@ future, but is not described here at the moment.
 
 ### Linux
 
-The installation has been tested on Debian GNU/Linux 10 (buster).
+The installation has been tested on Debian GNU/Linux 10.
 
 Install the following required software:
 
-- [PGI compiler](https://www.pgroup.com/products/community.htm)
+- gfortran and gcc (usually available in Linux distribution repositories)
 - Python 3 (usually pre-installed on Linux distributions)
-
-Once you have installed PGI, make sure the command `pgf95` works in the console.
 
 Download and unpack the [latest ALCF version](https://github.com/peterkuma/alcf/archive/master.zip),
 and run commands below in the unpacked directory.
