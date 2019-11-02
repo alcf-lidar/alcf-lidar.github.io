@@ -22,10 +22,11 @@ Download and unpack the [latest ALCF version](https://github.com/peterkuma/alcf/
 and run commands below in the unpacked directory.
 
 Before compiling the dependencies, you might need to install the following
-packages: libexpat-dev, m4 and libz3-dev. On Debian/Ubuntu install with:
+packages: gfortran, libexpat-dev, m4, libcurl4-openssl-dev and zlib1g-dev,
+python3-setuptools, python3-pip. On Debian/Ubuntu install with:
 
 ```sh
-apt-get install libexpat-dev m4 libz3-dev
+apt-get install gfortran libexpat-dev m4 libcurl4-openssl-dev zlib1g-dev python3-setuptools python3-pip
 ```
 
 To download and build dependencies
