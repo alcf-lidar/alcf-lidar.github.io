@@ -21,6 +21,13 @@ Install the following required software:
 Download and unpack the [latest ALCF version](https://github.com/peterkuma/alcf/archive/master.zip),
 and run commands below in the unpacked directory.
 
+Before compiling the dependencies, you might need to install the following
+packages: libexpat-dev, m4 and libz3-dev. On Debian/Ubuntu install with:
+
+```sh
+apt-get install libexpat-dev m4 libz3-dev
+```
+
 To download and build dependencies
 ([UDUNITS](https://www.unidata.ucar.edu/software/udunits/),
 [NetCDF](https://www.unidata.ucar.edu/software/netcdf/),
@@ -35,6 +42,9 @@ To download and build dependencies
 ./build_dep
 make
 ```
+
+`download_dep` will automatically download required libraries and `build_dep`
+will compile the libraries (it might take up to 5 minutes to finish).
 
 **Note:** ALCF uses the Python libraries [ds-python](https://github.com/peterkuma/ds-python),
 [aquarius-time](https://github.com/peterkuma/aquarius-time) and
