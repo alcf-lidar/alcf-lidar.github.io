@@ -11,7 +11,8 @@ future, but is not described here at the moment.
 
 ### Linux
 
-The installation has been tested on Debian GNU/Linux 10.
+The installation has been tested on Debian GNU/Linux 10 and
+Ubuntu Desktop 19.10.
 
 Install the following required software:
 
