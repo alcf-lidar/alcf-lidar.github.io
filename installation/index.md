@@ -11,8 +11,8 @@ future, but is not described here at the moment.
 
 ### Linux
 
-The installation has been tested on Debian GNU/Linux 10 and
-Ubuntu Desktop 19.10.
+The installation has been tested on Debian GNU/Linux 10, Devuan GNU/Linux 2.1,
+Ubuntu Desktop 19.10 and Fedora 31 Workstation.
 
 Install the following required software:
 
@@ -24,10 +24,13 @@ and run commands below in the unpacked directory.
 
 Before compiling the dependencies, you might need to install the following
 packages: gfortran, libexpat-dev, m4, libcurl4-openssl-dev and zlib1g-dev,
-python3-setuptools, python3-pip. On Debian/Ubuntu install with:
+python3-setuptools, python3-pip. Install with:
 
 ```sh
+# Debian, Devuan, Ubuntu:
 apt-get install gfortran libexpat-dev m4 libcurl4-openssl-dev zlib1g-dev python3-setuptools python3-pip
+# Fedora:
+yum install make patch g++ gfortran expat-devel m4 libcurl-devel zlib-devel python3-setuptools python3-pip
 ```
 
 To download and build dependencies
