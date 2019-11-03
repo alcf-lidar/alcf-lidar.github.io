@@ -11,8 +11,8 @@ future, but is not described here at the moment.
 
 ### Linux
 
-The installation has been tested on Debian GNU/Linux 10, Devuan GNU/Linux 2.1,
-Ubuntu Desktop 19.10 and Fedora 31 Workstation.
+The installation has been tested on [Debian GNU/Linux](https://www.debian.org/) 10, [Devuan GNU/Linux](https://devuan.org/) 2.1,
+[Ubuntu](https://ubuntu.com/) Desktop 19.10 and [Fedora](https://getfedora.org/) 31 Workstation.
 
 Install the following required software:
 
