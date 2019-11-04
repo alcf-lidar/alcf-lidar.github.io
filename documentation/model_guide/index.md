@@ -9,9 +9,14 @@ layout: default
 The following GCM, NWP models and reanalyses are supported:
 
 - [AMPS](http://www2.mmm.ucar.edu/rt/amps/)
+- [ERA5](https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/era5)
 - [MERRA2](https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/)
 - [NZCSM](https://www.nesi.org.nz/case-studies/improving-new-zealands-weather-forecasting-ability)
 - [UM](https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/index)
+
+**Note:** The ERA-Interim reanalysis is not supported due to the required fields
+(mass fraction of cloud liquid water and ice in air) not available in the
+dataset.
 
 TODO:
 
@@ -44,6 +49,32 @@ output:
 where xx is the [AMPS grid](http://www2.mmm.ucar.edu/rt/amps/information/configuration/maps_2017101012/maps.html), YYYYmmdd is the year (YYYY), month (mm) and day (dd). The "*_f000.nc"
 files are not suitable for use with ALCF as they do not contain all required
 variables.
+
+
+### ERA5
+
+**Source:** `alcf/models/era5.py`
+
+ERA5 reanalysis data can be downloaded from [Copernicus](https://cds.climate.copernicus.eu/#!/search?text=ERA5&type=dataset).
+
+"ERA5 hourly data on pressure levels from 1979 to present":
+
+- Product type: reanalysis
+- Variable: Geopotential, Specific cloud ice water content, Fraction of cloud cover, Specific cloud liquid water content, Temperature
+- Pressure level: *all*
+- Time: *all* (preferred)
+- Format: NetCDF
+
+"ERA5 hourly data on single levels from 1979 to present"
+
+- Product type: reanalysis
+- Variable: Surface pressure, Orography
+- Time: *the same as above*
+- Format: NetCDF
+
+Save the pressure-level files in a directory named `plev` and the surface-level
+files in a directory named `surf`. Pass the path to the parent directory
+to `alcf model` or `alcf auto model`.
 
 ### MERRA-2
 
