@@ -11,7 +11,8 @@ future, but is not described here at the moment.
 
 ### Linux
 
-The installation has been tested on Debian GNU/Linux 10.
+The installation has been tested on [Debian GNU/Linux](https://www.debian.org/) 10, [Devuan GNU/Linux](https://devuan.org/) 2.1,
+[Ubuntu](https://ubuntu.com/) Desktop 19.10 and [Fedora](https://getfedora.org/) 31 Workstation.
 
 Install the following required software:
 
@@ -20,6 +21,17 @@ Install the following required software:
 
 Download and unpack the [latest ALCF version](https://github.com/peterkuma/alcf/archive/master.zip),
 and run commands below in the unpacked directory.
+
+Before compiling the dependencies, you might need to install the following
+packages: gfortran, libexpat-dev, m4, libcurl4-openssl-dev and zlib1g-dev,
+python3-setuptools, python3-pip. Install with:
+
+```sh
+# Debian, Devuan, Ubuntu:
+apt-get install gfortran libexpat-dev m4 libcurl4-openssl-dev zlib1g-dev python3-setuptools python3-pip
+# Fedora:
+yum install make patch g++ gfortran expat-devel m4 libcurl-devel zlib-devel python3-setuptools python3-pip
+```
 
 To download and build dependencies
 ([UDUNITS](https://www.unidata.ucar.edu/software/udunits/),
@@ -35,6 +47,9 @@ To download and build dependencies
 ./build_dep
 make
 ```
+
+`download_dep` will automatically download required libraries and `build_dep`
+will compile the libraries (it might take up to 5 minutes to finish).
 
 **Note:** ALCF uses the Python libraries [ds-python](https://github.com/peterkuma/ds-python),
 [aquarius-time](https://github.com/peterkuma/aquarius-time) and

@@ -6,8 +6,12 @@ layout: default
 ### [Documentation](../)
 ## ALCF output
 
-The ALCF output is stored in NetCDF files. Below is description of variables
-contained in the data files.
+The ALCF output is stored in NetCDF files. Below is a description of variables
+contained in the data files. Variable names follow the
+[CMIP5 standard output](https://pcmdi.llnl.gov/mips/cmip5/docs/standard_output.pdf).
+Time is stored as [Julian date](https://en.wikipedia.org/wiki/Julian_day)
+and can be converted to Unix time (the number of non-leap seconds since
+1970-01-01 00:00 UTC) with the formula `(time - 2440587.5)*86400`.
 
 ### model
 

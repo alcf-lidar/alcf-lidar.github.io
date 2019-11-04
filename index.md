@@ -3,19 +3,21 @@ title: Home
 layout: default
 ---
 
-<p class="abstract">
-ALCF is an open source command line tool for processing of automatic lidar and ceilometer (ALC) data and intercomparison with atmospheric models such as general circulation models (GCMs), numerical weather prediction (NWP) models and reanalyses utilising a lidar simulator of the <a href="https://www.earthsystemcog.org/projects/cfmip/cosp">COSP</a> instrument simulator framework. ALCs are vertically pointing atmospheric lidars, measuring cloud and aerosol backscatter. The primary focus of ALCF are atmospheric studies of cloud using ALC observations and model cloud validation.
-</p>
+<div class="abstract">
+ALCF is an open source command line tool for processing of automatic lidar and ceilometer (ALC) data and intercomparison with atmospheric models such as general circulation models (GCMs), numerical weather prediction (NWP) models and reanalyses utilising a lidar simulator based on the <a href="https://www.earthsystemcog.org/projects/cfmip/cosp">COSP</a> instrument simulator framework. ALCs are vertically pointing atmospheric lidars, measuring cloud and aerosol backscatter. The primary focus of ALCF are atmospheric studies of cloud using ALC observations and model cloud validation.
+<div style="font-weight: normal; text-align: center; margin: 14px 0">
+<a href="presentation.pdf">Presentation (PDF)</a> &nbsp;|&nbsp; <a href="poster.pdf">Poster (PDF)</a>
+</div>
 
-[Presentation (PDF)](presentation.pdf) \| [Poster (PDF)](poster.pdf)
+</div>
 
 ### Features
 
 #### Multiple instruments and models
 
 ALCF can process data from multiple ceilometers and lidars:
-Vaisala CL31, CL51, Lufft CHM 15k, Sigma Space MiniMPL. Multiple models
-and reanalyses are supported by the lidar simulator: MERRA-2, AMPS, NZCSM.
+Vaisala [CL31](https://www.vaisala.com/en/products/instruments-sensors-and-other-measurement-devices/weather-stations-and-sensors/cl31), [CL51](https://www.vaisala.com/en/products/instruments-sensors-and-other-measurement-devices/weather-stations-and-sensors/cl51), Lufft [CHM 15k](https://www.lufft.com/products/cloud-height-snow-depth-sensors-288/ceilometer-chm-15k-nimbus-2300/), Sigma Space [MiniMPL](https://www.micropulselidar.com/). Multiple models
+and reanalyses are supported by the lidar simulator: [MERRA-2](https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/), [AMPS](http://www2.mmm.ucar.edu/rt/amps/), NZCSM, [Met Office Unified Model (UM)](https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/index).
 
 <div class="img-flex">
 <a href="{{ "/img/chm15k_512x.jpg" | relative_url }}"><img src="{{ "/img/chm15k_512x.jpg" | relative_url }}" height="200" /></a>
