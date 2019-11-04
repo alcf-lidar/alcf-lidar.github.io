@@ -18,11 +18,6 @@ The following GCM, NWP models and reanalyses are supported:
 (mass fraction of cloud liquid water and ice in air) not available in the
 dataset.
 
-TODO:
-
-- CMIP5
-- JRA-55
-
 Below is a description of the model output supported by ALCF. You might
 have to modify the code for reading the model output depending on the
 exact format of the model output, such as variable names and how they are
@@ -107,6 +102,8 @@ to run the lidar simulator:
 - theta_lev_temp
 - time0
 
+<!--
+
 ### CMIP5
 
 TODO
@@ -130,6 +127,8 @@ CMIP5 model output can be downloaded from the [CMIP5 Earth System Grid (ESG) arc
 ### JRA-55
 
 TODO
+
+-->
 
 ### NZESM (experimental)
 
