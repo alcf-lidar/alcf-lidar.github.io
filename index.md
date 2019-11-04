@@ -17,7 +17,7 @@ ALCF is an open source command line tool for processing of automatic lidar and c
 
 ALCF can process data from multiple ceilometers and lidars:
 Vaisala [CL31](https://www.vaisala.com/en/products/instruments-sensors-and-other-measurement-devices/weather-stations-and-sensors/cl31), [CL51](https://www.vaisala.com/en/products/instruments-sensors-and-other-measurement-devices/weather-stations-and-sensors/cl51), Lufft [CHM 15k](https://www.lufft.com/products/cloud-height-snow-depth-sensors-288/ceilometer-chm-15k-nimbus-2300/), Sigma Space [MiniMPL](https://www.micropulselidar.com/). Multiple models
-and reanalyses are supported by the lidar simulator: [MERRA-2](https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/), [AMPS](http://www2.mmm.ucar.edu/rt/amps/), NZCSM, [Met Office Unified Model (UM)](https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/index).
+and reanalyses are supported by the lidar simulator: [AMPS](http://www2.mmm.ucar.edu/rt/amps/), [ERA5](https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/era5), [MERRA-2](https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/), NZCSM and [UM](https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/index).
 
 <div class="img-flex">
 <a href="{{ "/img/chm15k_512x.jpg" | relative_url }}"><img src="{{ "/img/chm15k_512x.jpg" | relative_url }}" height="200" /></a>
