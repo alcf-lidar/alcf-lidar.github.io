@@ -55,9 +55,9 @@ variables.
 
 **Source:** `alcf/models/era5.py`
 
-ERA5 reanalysis data can be downloaded from [Copernicus](https://cds.climate.copernicus.eu/#!/search?text=ERA5&type=dataset).
+ERA5 reanalysis data can be downloaded from [Copernicus](https://cds.climate.copernicus.eu/#!/search?text=ERA5&type=dataset). Download the following datasets:
 
-"ERA5 hourly data on pressure levels from 1979 to present":
+**ERA5 hourly data on pressure levels from 1979 to present:**
 
 - Product type: reanalysis
 - Variable: Geopotential, Specific cloud ice water content, Fraction of cloud cover, Specific cloud liquid water content, Temperature
@@ -65,7 +65,7 @@ ERA5 reanalysis data can be downloaded from [Copernicus](https://cds.climate.cop
 - Time: *all* (preferred)
 - Format: NetCDF
 
-"ERA5 hourly data on single levels from 1979 to present"
+**ERA5 hourly data on single levels from 1979 to present:**
 
 - Product type: reanalysis
 - Variable: Surface pressure, Orography
