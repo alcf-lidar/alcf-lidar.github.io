@@ -152,6 +152,32 @@ bin/calc_k out/miev_910 gamma out/k_gamma_910.nc
 bin/calc_k out/miev_1064 gamma out/k_gamma_1064.nc
 ```
 
+#### orig_cosp_poly
+
+Calculate the backscatter-to-extinction ratio k based on the original COSP
+polynnomials (Chepfer et al., 2007; Fig. 9).
+
+Usage: `bin/orig_cosp_poly <type> <output>`
+
+Arguments:
+
+- `type` – see Types below
+- `output` – output file (NetCDF)
+
+Types:
+
+- `liq` – liquid
+- `ice` – ice
+- `ice_ns` – ice (NS)
+
+Example:
+
+```sh
+bin/orig_cosp_poly liq out/k_orig_cosp_poly_liq.nc
+bin/orig_cosp_poly ice out/k_orig_cosp_poly_ice.nc
+bin/orig_cosp_poly ice_ns out/k_orig_cosp_poly_ice_ns.nc
+```
+
 #### plot_lr
 
 Plot lidar ratio calculated by calc_k.
@@ -172,3 +198,8 @@ Example:
 ```sh
 bin/plot_lr out/k_*.nc plot/lr.pdf
 ```
+
+Figure 1 shows the result of `plot_lr` for k calculated by
+`calc_k` and `orig_cosp_poly`.
+
+<figure><a href="lr.png"><img src="lr.png" width="500" /></a><figcaption><strong>Figure 1: </strong>Lidar ratio as a function of the effective radius.</figcaption></figure>
