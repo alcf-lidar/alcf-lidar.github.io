@@ -46,7 +46,7 @@ Lufft CHM 15k is a ceilometer which uses near-infrared wavelength of 1064 nm. Th
 stores backscatter in NetCDF files, which can be used directly with the ALCF
 commands `alcf auto lidar` and `alcf lidar` without conversion.
 
-### CALIPSO/CALOP
+### CALIPSO/CALIOP
 
 **Type:** `caliop`
 
