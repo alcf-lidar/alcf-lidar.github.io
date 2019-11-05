@@ -59,13 +59,16 @@ Options:
 Model types:
 
 - `amps`: Antarctic Mesoscale Prediction System (AMPS)
+- `era5`: ERA5
 - `merra2`: Modern-Era Retrospective Analysis for Research and Applications,
 	Version 2 (MERRA-2)
 - `nzcsm`: New Zealand Convection Scale Model (NZCSM)
 - `nzesm`: New Zealand Earth System Model (NZESM) (experimental)
+- `um`: UK Met Office Unified Model (UM)
 
 Lidar types:
 
+- `caliop`: CALIPSO/CALIOP (`alcf auto model` only)
 - `chm15k`: Lufft CHM 15k
 - `cl31`: Vaisala CL31
 - `cl51`: Vaisala CL51

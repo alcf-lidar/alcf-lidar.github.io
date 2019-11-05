@@ -12,6 +12,7 @@ Arguments:
 
 Types:
 
+- `caliop`: CALIPSO/CALIOP
 - `chm15k`: Lufft CHM 15k
 - `cl51`: Vaisala CL51
 - `mpl`: Sigma Space MiniMPL
