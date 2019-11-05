@@ -8,11 +8,15 @@ layout: default
 
 The following ALCs are supported:
 
-- Lufft CHM 15k
-- Sigma Space MiniMPL
-- Vaisala CL31, CL51
+- [Lufft CHM 15k](https://www.lufft.com/products/cloud-height-snow-depth-sensors-288/ceilometer-chm-15k-nimbus-2300/)
+- [Sigma Space MiniMPL](https://www.micropulselidar.com/)
+- Vaisala [CL31](https://www.vaisala.com/en/products/instruments-sensors-and-other-measurement-devices/weather-stations-and-sensors/cl31)
+- Vaisala [CL51](https://www.vaisala.com/en/products/instruments-sensors-and-other-measurement-devices/weather-stations-and-sensors/cl51)
+- [CALIPSO/CALIOP](https://www-calipso.larc.nasa.gov/) (lidar simulation only)
 
 ### Vaisala CL31, CL51
+
+**Type:** `cl3`, `cl5`
 
 Vaisala CL31 and CL51 use near-infrared wavelength of 910 nm. The instruments
 store backscatter in DAT files. These can be converted to NetCDF
@@ -24,6 +28,8 @@ to convert DAT files to NetCDF.
 
 ### Sigma Space MiniMPL
 
+**Type:** `minimpl`
+
 Sigma Space MiniMPL uses visible wavelength of 532 nm. The instrument
 stores backscatter in MPL files. These can be converted to NetCDF using
 the SigmaMPL software.  The NetCDF files can then be used as input to the
@@ -34,6 +40,18 @@ contain all of the required variables.
 
 ### Lufft CHM 15k
 
+**Type:** `chm15k`
+
 Lufft CHM 15k uses near-infrared wavelength of 1064 nm. The instrument
 stores backscatter in NetCDF files, which can be used directly with the ALCF
 commands `alcf auto lidar` and `alcf lidar` without conversion.
+
+### CALIPSO/CALOP
+
+**Type:** `caliop`
+
+CALIOP is the spaceborne lidar on board of the CNES-NASA satellite CALIPSO.
+ALCF supports lidar simulation of a spaceborne lidar at 532 nm, i.e. it can
+produce simulated backscatter profiles from atmospheric model data. Therefore,
+this lidar type can be used with `alcf simulate` and `alcf auto model`,
+but not with `alcf lidar` or `alcf auto lidar`.
