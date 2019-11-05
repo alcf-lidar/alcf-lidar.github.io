@@ -178,6 +178,14 @@ bin/orig_cosp_poly ice out/k_orig_cosp_poly_ice.nc
 bin/orig_cosp_poly ice_ns out/k_orig_cosp_poly_ice_ns.nc
 ```
 
+The original COSP polynomials are (`polpart` in `actsim/lidar_simulator.F90`):
+
+- liquid: `2.6980e-8*x**4 + -3.7701e-6*x**3 + 1.6594e-4*x**2 + -0.0024*x + 0.0626`
+- ice: `-1.0176e-8*x**4 + 1.7615e-6*x**3 + -1.0480e-4*x**2 + 0.0019*x + 0.0460`
+- ice (NS): `1.3615e-8*x**4 + -2.04206e-6*x**3 + 7.51799e-5*x**2 + 0.00078213*x + 0.0182131`
+
+where `x` is the effective radius.
+
 #### plot_lr
 
 Plot lidar ratio calculated by calc_k.
