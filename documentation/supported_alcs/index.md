@@ -18,7 +18,7 @@ The following ALCs are supported:
 
 **Type:** `cl3`, `cl5`
 
-Vaisala CL31 and CL51 use near-infrared wavelength of 910 nm. The instruments
+Vaisala CL31 and CL51 are ceilometers which use near-infrared wavelength of 910 nm. The instruments
 store backscatter in DAT files. These can be converted to NetCDF
 with the `alcf convert cl51 <input> <output>` command, where `<input>`
 and `<output>` are input and output directories, respectively. The NetCDF files
@@ -30,7 +30,7 @@ to convert DAT files to NetCDF.
 
 **Type:** `minimpl`
 
-Sigma Space MiniMPL uses visible wavelength of 532 nm. The instrument
+Sigma Space MiniMPL is a lidar which use visible wavelength of 532 nm. The instrument
 stores backscatter in MPL files. These can be converted to NetCDF using
 the SigmaMPL software.  The NetCDF files can then be used as input to the
 `alcf auto lidar` and `alcf lidar` commands. The tool
@@ -42,7 +42,7 @@ contain all of the required variables.
 
 **Type:** `chm15k`
 
-Lufft CHM 15k uses near-infrared wavelength of 1064 nm. The instrument
+Lufft CHM 15k is a ceilometer which uses near-infrared wavelength of 1064 nm. The instrument
 stores backscatter in NetCDF files, which can be used directly with the ALCF
 commands `alcf auto lidar` and `alcf lidar` without conversion.
 
@@ -50,7 +50,7 @@ commands `alcf auto lidar` and `alcf lidar` without conversion.
 
 **Type:** `caliop`
 
-CALIOP is the spaceborne lidar on board of the CNES-NASA satellite CALIPSO.
+CALIOP is a spaceborne lidar on board of the CNES-NASA satellite CALIPSO.
 ALCF supports lidar simulation of a spaceborne lidar at 532 nm, i.e. it can
 produce simulated backscatter profiles from atmospheric model data. Therefore,
 this lidar type can be used with `alcf simulate` and `alcf auto model`,
