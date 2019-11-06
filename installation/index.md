@@ -24,13 +24,13 @@ and run commands below in the unpacked directory.
 
 Before compiling the dependencies, you might need to install the following
 packages: gfortran, libexpat-dev, m4, libcurl4-openssl-dev and zlib1g-dev,
-python3-setuptools, python3-pip. Install with:
+python3-setuptools, python3-pip and eccodes. Install with:
 
 ```sh
 # Debian, Devuan, Ubuntu:
-apt-get install gfortran libexpat-dev m4 libcurl4-openssl-dev zlib1g-dev python3-setuptools python3-pip
+apt-get install gfortran libexpat-dev m4 libcurl4-openssl-dev zlib1g-dev python3-setuptools python3-pip libeccodes-tools
 # Fedora:
-yum install make patch g++ gfortran expat-devel m4 libcurl-devel zlib-devel python3-setuptools python3-pip
+yum install make patch g++ gfortran expat-devel m4 libcurl-devel zlib-devel python3-setuptools python3-pip eccodes
 ```
 
 To download and build dependencies

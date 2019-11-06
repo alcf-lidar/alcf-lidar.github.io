@@ -10,6 +10,7 @@ The following GCM, NWP models and reanalyses are supported:
 
 - [AMPS](http://www2.mmm.ucar.edu/rt/amps/)
 - [ERA5](https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/era5)
+- [JRA-55](https://jra.kishou.go.jp/JRA-55/index_en.html)
 - [MERRA2](https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/)
 - [NZCSM](https://www.nesi.org.nz/case-studies/improving-new-zealands-weather-forecasting-ability)
 - [UM](https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/index)
@@ -69,6 +70,25 @@ ERA5 reanalysis data can be downloaded from [Copernicus](https://cds.climate.cop
 Save the pressure-level files in a directory named `plev` and the surface-level
 files in a directory named `surf`. Pass the path to the parent directory
 to `alcf model` or `alcf auto model`.
+
+### JRA-55
+
+**Source:** `alcf/models/jra55.py`
+
+The JRA-55 reanalysis data can be downloaded from the
+[JRA-55 project website](https://jra.kishou.go.jp/JRA-55/index_en.html).
+The following fields are required by ALCF:
+
+- `anl_p125_hgt` (Geopotential height @ Isobaric Surface)
+- `anl_p125_tmp` (Temperature @ Isobaric Surface)
+- `anl_surf125` (Surface analysis fields)
+- `fcst_p125_ciwc` (Cloud ice @ Isobaric Surface)
+- `fcst_p125_clwc` (Cloud liquid water @ Isobaric Surface)
+- `fcst_p125_tcdc` (Total cloud cover @ Isobaric Surface)
+
+The JRA-55 GRIB files have to be converted to NetCDF before they can be
+used with ALCF. Use `alcf convert jra55 <input> <output>` to convert the
+data. All data files should reside in the same directory.
 
 ### MERRA-2
 
