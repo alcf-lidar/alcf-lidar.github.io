@@ -11,5 +11,5 @@ layout: default
 2. [Supported ALCs](supported_alcs/)
 3. [Model guide](model_guide/)
 4. [ALCF output](alcf_output/)
-5. [Calibration](calibration/)
-6. [Lidar simulator](lidar_simulator/)
+<!--5. [Calibration](calibration/)-->
+5. [Lidar simulator](lidar_simulator/)

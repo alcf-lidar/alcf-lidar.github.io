@@ -129,9 +129,11 @@ files.
 <figcaption><strong>Figure 2 | </strong>MERRA-2 plots.</figcaption>
 </figure>
 
+<!--
 #### Comparison
 
 TODO
+-->
 
 ### Conclusion
 
