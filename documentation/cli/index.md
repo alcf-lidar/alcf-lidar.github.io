@@ -20,14 +20,15 @@ for passing complex command line arguments.
 | Command | Description |
 | --- | --- |
 | [convert](cmd_convert.html) | convert input instrument or model data to ALCF standard NetCDF |
-<!--| [calibrate](cmd_calibrate.html) | calibrate ALC (TODO) |-->
 | [model](cmd_model.html) | extract model data at a point or along a track |
 | [simulate](cmd_simulate.html) | simulate lidar measurements from model data using COSP |
 | [lidar](cmd_lidar.html) | process lidar data |
 | [stats](cmd_stats.html) | calculate cloud occurrence statistics |
 | [plot](cmd_plot.html) | plot lidar data |
-<!--| [compare](cmd_compare.html) | TODO |-->
 | [auto](cmd_auto.html) | peform automatic processing of model or lidar data |
+
+<!-- | [calibrate](cmd_calibrate.html) | calibrate ALC (TODO) | -->
+<!-- | [compare](cmd_compare.html) | TODO | -->
 
 ### Automatic processing
 
@@ -62,7 +63,9 @@ ALC observations processing:
 5. `alcf plot cloud_occurrence` – plot cloud occurrence calculated in step 4.
 6. `alcf plot backscatter_hist` – plot backscatter histogram calculated in
     step 4.
-<!--4. `alcf calibrate` (TODO) – calculate calibration coefficient based on opaque
+
+<!--
+4. `alcf calibrate` (TODO) – calculate calibration coefficient based on opaque
     stratocumulus intervals identified in step 3.,
 5. `alcf lidar` – produce calibrated resampled data,
 6. `alcf plot backscatter` – plot calibrated backscatter profiles
@@ -70,7 +73,8 @@ ALC observations processing:
     lidar data from step 5.
 8. `alcf plot cloud_occurrence` – plot cloud occurrence calculated in step 7.
 9. `alcf plot backscatter_hist` – plot backscatter histogram calculated in
-    step 7.-->
+    step 7.
+-->
 
 Model output processing:
 
