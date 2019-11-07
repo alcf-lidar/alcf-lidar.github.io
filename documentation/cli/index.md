@@ -44,9 +44,12 @@ Automatic processing of model data can be done with the `alcf auto model`
 command and performs extraction of model data, runs the lidar simulator,
 and processes the simulated backscatter in the same way as `alcf lidar`.
 
+
+<!--
 Automatic comparison of processed lidar or model data (the output of
 `alcf lidar` or `alcf model`, respectively) can be done with
 `alcf auto compare`.
+-->
 
 ### Manual processing
 
