@@ -62,8 +62,8 @@ ALC observations processing:
 2. `alcf lidar` – produce resampled data,
 3. `alcf plot backscatter` – plot backscatter profiles,
 4. `alcf stats` – calculate summary statistics from resampled
-    lidar data from step 2.
-5. `alcf plot cloud_occurrence` – plot cloud occurrence calculated in step 4.
+    lidar data from step 2.,
+5. `alcf plot cloud_occurrence` – plot cloud occurrence calculated in step 4.,
 6. `alcf plot backscatter_hist` – plot backscatter histogram calculated in
     step 4.
 
@@ -88,7 +88,7 @@ Model output processing:
 4. `alcf plot backscatter` – plot simulated backscatter profiles from step 3.,
 5. `alcf stats` – calculate summary statistics from resampled simulated
     backscatter data from step 3.,
-6. `alcf plot cloud_occurrence` – plot cloud occurrence calculated in step 5.
+6. `alcf plot cloud_occurrence` – plot cloud occurrence calculated in step 5.,
 7. `alcf plot backscatter_hist` – plot backscatter histogram calculated in
     step 5.
 
