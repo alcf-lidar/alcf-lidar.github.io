@@ -9,7 +9,7 @@ layout: default
 ### Introduction
 
 ALCF uses a modified version of COSPv1 for lidar simulation, which can
-be found at [github.com/peterkuma/COSPv1](https://github.com/peterkuma/COSPv1).
+be found at [github.com/alcf-lidar/COSPv1](https://github.com/alcf-lidar/COSPv1).
 The ACTSIM lidar simulator included in COSP has been modified to account
 for the different viewing geometry and wavelength of a ground-based lidar.
 
