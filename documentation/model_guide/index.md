@@ -79,16 +79,17 @@ The JRA-55 reanalysis data can be downloaded from the
 [JRA-55 project website](https://jra.kishou.go.jp/JRA-55/index_en.html).
 The following fields are required by ALCF:
 
-- `anl_p125_hgt` (Geopotential height @ Isobaric Surface)
-- `anl_p125_tmp` (Temperature @ Isobaric Surface)
+- `anl_p125/anl_p125_hgt` (Geopotential height @ Isobaric Surface)
+- `anl_p125/anl_p125_tmp` (Temperature @ Isobaric Surface)
 - `anl_surf125` (Surface analysis fields)
-- `fcst_p125_ciwc` (Cloud ice @ Isobaric Surface)
-- `fcst_p125_clwc` (Cloud liquid water @ Isobaric Surface)
-- `fcst_p125_tcdc` (Total cloud cover @ Isobaric Surface)
+- `fcst_p125/fcst_p125_ciwc` (Cloud ice @ Isobaric Surface)
+- `fcst_p125/fcst_p125_clwc` (Cloud liquid water @ Isobaric Surface)
+- `fcst_p125/fcst_p125_tcdc` (Total cloud cover @ Isobaric Surface)
 
+Download files for the period of interest all into the same directory.
 The JRA-55 GRIB files have to be converted to NetCDF before they can be
 used with ALCF. Use `alcf convert jra55 <input> <output>` to convert the
-data. All data files should reside in the same directory.
+data.
 
 ### MERRA-2
 

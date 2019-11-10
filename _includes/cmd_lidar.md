@@ -65,9 +65,8 @@ Algorithm options:
 	- `none`: disable cloud base detection
 
 - Calibration:
-    - `default`: multiply backscatter by calibration coefficient
-        - `calibration_coeff: <coeff>`: Calibration coefficient.
-        Default: instrument-dependent default value.
+    - `default`: multiply backscatter by a calibration coefficient
+        - `calibration_file: <file>`: calibration file
 	- `none`: disable calibration
 
 - Noise removal:
