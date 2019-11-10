@@ -19,15 +19,15 @@ for passing complex command line arguments.
 
 | Command | Description |
 | --- | --- |
-| [convert](cmd_convert.html) | convert input instrument or model data to ALCF standard NetCDF |
-| [model](cmd_model.html) | extract model data at a point or along a track |
-| [simulate](cmd_simulate.html) | simulate lidar measurements from model data using COSP |
-| [lidar](cmd_lidar.html) | process lidar data |
-| [stats](cmd_stats.html) | calculate cloud occurrence statistics |
-| [plot](cmd_plot.html) | plot lidar data |
 | [auto](cmd_auto.html) | peform automatic processing of model or lidar data |
+| [calibrate](cmd_calibrate.html) | calibrate lidar backscatter |
+| [convert](cmd_convert.html) | convert input instrument or model data to ALCF standard NetCDF |
+| [lidar](cmd_lidar.html) | process lidar data |
+| [model](cmd_model.html) | extract model data at a point or along a track |
+| [plot](cmd_plot.html) | plot lidar data |
+| [simulate](cmd_simulate.html) | simulate lidar measurements from model data using COSP |
+| [stats](cmd_stats.html) | calculate cloud occurrence statistics |
 
-<!-- | [calibrate](cmd_calibrate.html) | calibrate ALC (TODO) | -->
 <!-- | [compare](cmd_compare.html) | TODO | -->
 
 ### Automatic processing

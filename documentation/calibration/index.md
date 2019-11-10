@@ -8,31 +8,43 @@ layout: default
 
 Depending on the instrument, calibration in ALCF may be an essential part of
 processing ALC data. Ceilometers often report backscatter values in
-"arbitrary units" which need to be converted to m^-1.sr^-1 for a reliable
+arbitrary units which need to be converted to m^-1.sr^-1 for a reliable
 comparison with the COSP simulator. The recommended calibration method of
-calibration in ALCF is [O'Connor et al. (2004)](https://journals.ametsoc.org/doi/abs/10.1175/1520-0426(2004)021%3C0777%3AATFAOC%3E2.0.CO%3B2) for its universality.
-The method is based on the fact that the lidar ratio of fully opaque
-stratocumulus scenes tends to a constant.
+calibration in ALCF is [O'Connor et al. (2004)](https://journals.ametsoc.org/doi/abs/10.1175/1520-0426(2004)021%3C0777%3AATFAOC%3E2.0.CO%3B2). The method is based on the fact that the
+lidar ratio in fully opaque liquid stratocumulus profiles is approximately
+constant, depending only on the wavelength of the lidar, assuming the cloud
+droplet size of the stratocumulus cloud is within a certain normal range.
 
-1. Plot daily uncalibrated ALC data by:
+The calibration steps as follows:
 
-        alcf lidar <type> <raw-dir> <lidar-dir>
-        alcf plot lidar --lr <lidar-dir> <plot-dir>
+1. Process and plot backscatter profiles with the lidar ratio, assuming the
+default calibration coefficient.
 
-2. Identify visually sections of the plots which contain fully attenuating
-stratocumulus clouds, and note their time intervals.
+	`alcf auto lidar <type> <input> <output> --lr`
 
-TODO:
+2. Identify time periods with stratocumulus cloud.
 
-3. Supply the time intervals to alcf calibrate:
+	Go through the backscatter profiles in `<output>/plot/backscatter`
+	and note the time periods with stratocumulus cloud in a text file
+	`calibration_time_periods.txt` in the format:
 
-        alcf calibrate { <start> <end> }...
+	```
+	<start> <end>
+	<start> <end>
+	...
+	```
 
-    where `<start>` and `<end>` are the start time and end time of each interval
-    in the ISO format (`<year>-<month>-<day>T<hour>:<minute>`). The command
-    will output the calibration coefficient to be used with the `alcf lidar`
-    command:
+	where `start` and `end` are in the format YYYY-MM-DDTHH:MM.
 
-        alcf lidar <type> --calibration_coeff: <coeff> <input> <output>
+3. Run `alcf calibrate` with a file listing the time periods to calculate
+the calibration coefficient.
 
-    where `<coeff>` is the calibration coefficient.
+	`alcf calibrate <type> <input> calibration.txt calibration_time_periods.txt`
+
+4. Process and plot backscatter profiles with the calculated calibration
+coefficient.
+
+	`alcf auto lidar <type> <input> <output> --lr calibration_file: calibration.txt`
+
+5. Check that the plotted lidar ratio in the stratocumulus profiles is
+	approximatly 18.8 sr.
