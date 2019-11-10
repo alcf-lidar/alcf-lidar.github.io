@@ -26,6 +26,11 @@ can then be used as input to the `alcf auto lidar` and `alcf lidar` commands.
 Alternatively, you can use the tool [cl2nc](https://github.com/peterkuma/cl2nc)
 to convert DAT files to NetCDF.
 
+The 910-nm wavelength band used by CL31 and CL51 is affected by water vapour
+absorption lines ([Wiegner et al., 2019](https://www.atmos-meas-tech.net/12/471/2019/)).
+ALCF currently does not support simulating water vapour absorption,
+and it is not taken into account in the calibration process.
+
 ### Sigma Space MiniMPL
 
 **Type:** `minimpl`
