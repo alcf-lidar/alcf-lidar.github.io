@@ -9,7 +9,7 @@ layout: default
 Depending on the instrument, calibration in ALCF may be an essential part of
 processing ALC data. Ceilometers often report backscatter values in
 arbitrary units which need to be converted to m<sup>-1</sup>.sr<sup>-1</sup> for a reliable
-comparison with the COSP simulator. The recommended calibration method 
+comparison with the COSP simulator. The recommended calibration method
 in ALCF is [O'Connor et al. (2004)](https://journals.ametsoc.org/doi/abs/10.1175/1520-0426(2004)021%3C0777%3AATFAOC%3E2.0.CO%3B2). The method is based on the fact that the
 lidar ratio in fully opaque liquid stratocumulus profiles is approximately
 constant, depending only on the wavelength of the lidar, assuming the cloud
@@ -39,6 +39,14 @@ default calibration coefficient.
 	See [O'Connor et al. (2014)](https://journals.ametsoc.org/doi/abs/10.1175/1520-0426(2004)021%3C0777%3AATFAOC%3E2.0.CO%3B2)
 	or [Hopkin et al. (2019)](https://www.atmos-meas-tech.net/12/4131/2019/) for more
 	information.
+
+	Figure 1 shows an example of a stratocumulus cloud in the time period:
+
+	```
+	2018-02-18T13:00 2018-02-18T15:00
+	```
+
+	<figure><a href="2018-02-18T00:00:00.png"><img src="2018-02-18T00:00:00.png" width="600" /></a><br /><strong>Figure 1:</strong> Stratocumulus layer between 13:00 and 15:00 UTC suitable for calibration.</figure>
 
 3. Run `alcf calibrate` with a file listing the time periods to calculate
 the calibration coefficient.
