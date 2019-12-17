@@ -14,10 +14,10 @@ is a beta release.
 Peter Kuma<sup>1</sup>, Adrian J. McDonald<sup>1</sup>, Olaf Morgenstern<sup>2</sup>, Richard Querel<sup>3</sup>, Israel Silber<sup>4</sup>, Connor J. Flynn<sup>5</sup>
 
 <p style="font-size: 80%">
-<sup>1</sup> University of Canterbury, Christchurch, New Zealand<br>
-<sup>2</sup> NIWA, Wellington, New Zealand
-<sup>3</sup> NIWA, Lauder, New Zealand
-<sup>4</sup> Department of Meteorology and Atmospheric Science, Pennsylvania State University, University Park, PA, USA
+<sup>1</sup> University of Canterbury, Christchurch, New Zealand<br />
+<sup>2</sup> NIWA, Wellington, New Zealand<br />
+<sup>3</sup> NIWA, Lauder, New Zealand<br />
+<sup>4</sup> Department of Meteorology and Atmospheric Science, Pennsylvania State University, University Park, PA, USA<br />
 <sup>5</sup> Pacific Northwest National Laboratory, Richland, WA, USA
 </p>
 
