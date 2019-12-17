@@ -79,6 +79,7 @@ The JRA-55 reanalysis data can be downloaded from the
 [JRA-55 project website](https://jra.kishou.go.jp/JRA-55/index_en.html).
 The following fields are required by ALCF:
 
+- `Const/LL25.grib` (Constant fields)
 - `anl_p125/anl_p125_hgt` (Geopotential height @ Isobaric Surface)
 - `anl_p125/anl_p125_tmp` (Temperature @ Isobaric Surface)
 - `anl_surf125` (Surface analysis fields)
@@ -88,8 +89,8 @@ The following fields are required by ALCF:
 
 Download files for the period of interest all into the same directory.
 The JRA-55 GRIB files have to be converted to NetCDF before they can be
-used with ALCF. Use `alcf convert jra55 <input> <output>` to convert the
-data.
+used with ALCF. Use [grib_to_netcdf](https://confluence.ecmwf.int/display/ECC/grib_to_netcdf)
+to convert the data. All data files should reside in the same directory.
 
 ### MERRA-2
 
