@@ -173,7 +173,7 @@ model output variables needed are:
 **Source:** `alcf/models/um.py`
 
 The NetCDF output (configuration option `l_netcdf`) of the UK Met Office
-Unified Model is supported. The following variables are required:
+Unified Model (UM) is supported. The following variables are required:
 
 - `TALLTS` (time)
 - `latitude_t` (latitude)
@@ -189,3 +189,12 @@ Unified Model is supported. The following variables are required:
 The variables should be provided on all theta levels and as high temporal
 sampling as possible (instantaneous). All variables should be dumped together
 to the same NetCDF file, split by time into arbitrary number of files.
+
+In addition, a file containing model orography is required. Convert the
+model grid `qrparam.orog` file distributed with the UM to NetCDF with iris:
+
+```sh
+python -c "import iris;c=iris.load('qrparm.orog');iris.save(c,'qrparm.orog.nc')"
+```
+
+and put `qrparm.orog.nc` in the same directory as the model output files.
