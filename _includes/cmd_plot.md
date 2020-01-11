@@ -34,11 +34,11 @@ Options:
 Plot command options:
 
 - `backscatter`:
-	- `--lr`: plot lidar ratio (LR)
-	- `--plot_cloud_mask`: plot cloud mask
-	- `sigma: <value>`: Suppress backscatter less than a number of standard deviations
-		from the mean backscatter (real). Default: `3`.
-	- `vlim: { <min> <max }`. Value limits (10^6 m-1.sr-1).
+    - `--lr`: plot lidar ratio (LR)
+    - `--plot_cloud_mask`: plot cloud mask
+    - `sigma: <value>`: Suppress backscatter less than a number of standard deviations
+        from the mean backscatter (real). Default: `3`.
+    - `vlim: { <min> <max }`. Value limits (10^6 m-1.sr-1).
         Default: `{ 10 2000 }`.
     - `vlog: <value>`: Plot values on logarithmic scale: `true` of `false`.
         Default: `true`.
@@ -49,13 +49,20 @@ Plot command options:
     - `--vlog`: use logarithmic scale for values
     - `xlim: { <min> <max> }`. x axis limits (10^6 m-1.sr-1) or `none` for
         automatic. Default: `none`.
-    - `zlim: { <min> <max> }`. y axis limits (m) or `none` for automatic.
+    - `zlim: { <min> <max> }`. z axis limits (m) or `none` for automatic.
         Default: `none`.
+- `backscatter_sd_hist`:
+    - `xlim: { <min> <max> }`. x axis limits (10^6 m-1.sr-1) or `none` for
+        automatic. Default: `none`.
+    - `zlim: { <min> <max> }`. z axis limits (%) or `none` for
+        automatic. Default: `none`.
 - `cloud_occurrence`:
     - `colors: { <value>... }`: Line colors.
         Default: `{ #0084c8 #dc0000 #009100 #ffc022 #ba00ff }`
+    - `linestyle`: { <value> ... }`: Line style (`solid`, `dashed`, `dotted`).
+        Default: `solid`.
     - `labels: { <value>... }`: Line labels. Default: `none`.
     - `lw: <value>`: Line width. Default: `1`.
     - `xlim: { <min> <max> }`: x axis limits (%). Default: `{ 0 100 }`.
-    - `zlim: { <min> <max> }`: y axis limits (m). Default: `{ 0 15 }`.
+    - `zlim: { <min> <max> }`: z axis limits (m). Default: `{ 0 15 }`.
 	

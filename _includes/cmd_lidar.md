@@ -31,14 +31,21 @@ Types:
 
 Options:
 
+- `altitude`: Altitude of the instrument (m).
+    Default: Taken from lidar data or `0` if not available.
 - `calibration: <algorithm>`: Backscatter calibration algorithm.
     Available algorithms: `default`, `none`. Default: `default`.
+- `couple: <directory>`: Couple to other lidar data. Default: `none`.
+- `cl_crit_range: <range>`: Critical range for the `fix_cl_range` option (m).
+    Default: 6000.
 - `cloud_detection: <algorithm>`: Cloud detection algorithm.
     Available algorithms: `default`, `none`. Default: `default`.
 - `cloud_base_detection: <algorithm>`: Cloud base detection algorithm.
     Available algorithms: `default`, `none`. Default: `default`.
 - `eta: <eta>`: Multiple-scattering factor to assume in lidar ratio calculation.
     Default: `0.7`.
+- `fix_cl_range` (experimental): Fix CL31/CL51 range correction (if `noise_h2`
+	firmware option if off). The critical range is taken from `cl_crit_range`.
 - `noise_removal: <algorithm>`: Noise removal algorithm.
     Available algorithms: `default`, `none`.  Default: `default`.
 - `output_sampling: <period>`: Output sampling period (seconds).
@@ -46,6 +53,7 @@ Options:
 - `tlim: { <low> <high> }`: Time limits (see Time format below).
     Default: `none`.
 - `tres: <tres>`: Time resolution (seconds). Default: `300` (5 min).
+- `tshift: <tshift>`: Time shift (seconds). Default: `0`.
 - `zlim: { <low> <high> }`: Height limits (m). Default: `{ 0 15000 }`.
 - `zres: <zres>`: Height resolution (m). Default: `50`.
 
@@ -56,7 +64,7 @@ Algorithm options:
         - `cloud_nsd: <n>`: Number of noise standard deviations to subtract.
         	Default: `3`.
         - `cloud_threshold: <threshold>`: Cloud detection threshold
-            (sr^-1.m^-1). Default: `10e-6`.
+            (sr^-1.m^-1). Default: `2e-6`.
 	- `none`: disable cloud detection
 
 - Cloud base detection:
