@@ -33,15 +33,15 @@ and it is not taken into account in the calibration process.
 
 ### Sigma Space MiniMPL
 
-**Type:** `minimpl`
+**Type:** `mpl` (`mpl2nc`)
 
 Sigma Space MiniMPL is a lidar which use visible wavelength of 532 nm. The instrument
 stores backscatter in MPL files. These can be converted to NetCDF using
-the SigmaMPL software.  The NetCDF files can then be used as input to the
+the SigmaMPL software. The NetCDF files can then be used as input to the
 `alcf auto lidar` and `alcf lidar` commands. The tool
 [mpl2nc](https://github.com/peterkuma/mpl2nc) can also convert MPL files
-to NetCDF, however, these cannot be used as input to ALCF as they do not
-contain all of the required variables.
+to NetCDF. Use the lidar type `mpl2nc` with `alcf auto lidar` and `alcf lidar`
+to process data from mpl2nc.
 
 ### Lufft CHM 15k
 
