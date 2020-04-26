@@ -7,9 +7,9 @@ layout: default
 
 ### Reference
 
-1. [Command line interace](cli/)
-2. [Supported ALCs](supported_alcs/)
-3. [Model guide](model_guide/)
-4. [ALCF output](alcf_output/)
-5. [Calibration](calibration/)
-6. [Lidar simulator](lidar_simulator/)
+1. [Command line interace]({{ "/documentation/cli/" | relative_url }})
+2. [Supported ALCs]({{ "/documentation/supported_alcs/" | relative_url }})
+3. [Model guide]({{ "/documentation/model_guide/" | relative_url }})
+4. [ALCF output]({{ "/documentation/alcf_output/" | relative_url }})
+5. [Calibration]({{ "/documentation/calibration/" | relative_url }})
+6. [Lidar simulator]({{ "/documentation/lidar_simulator/" | relative_url }})
