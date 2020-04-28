@@ -81,3 +81,12 @@ should output:
 ```
 {% include cmd_main.md %}
 ```
+
+## Releases
+
+Below is a list of releases of ALCF. The version numbers follow
+the [Semantic Versioning](https://semver.org).
+
+#### [1.0.0-beta.1](https://github.com/alcf-lidar/alcf/releases/tag/v1.0.0-beta.1) (2020-04-28) 
+
+- Initial beta release.
