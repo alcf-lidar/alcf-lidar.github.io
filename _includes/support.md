@@ -3,7 +3,7 @@
 ### Questions
 
 If you have a question about using ALCF, you can contact me at
-Peter Kuma &lt;peter.kuma<span>@</span>fastmail.com&gt;.
+Peter Kuma &lt;peter<span>@</span>peterkuma.net&gt;.
 
 ### Bugs
 
