@@ -15,7 +15,8 @@ Install the following required software:
 - gfortran and gcc (usually available in Linux distribution repositories)
 - Python 3 (usually pre-installed on Linux distributions)
 
-Download and unpack the [latest ALCF version](https://github.com/peterkuma/alcf/archive/master.zip),
+Download and unpack the [latest ALCF version](https://github.com/peterkuma/alcf/archive/master.zip)
+or one of the [releases](#releases),
 and run commands below in the unpacked directory.
 
 Before compiling the dependencies, you might need to install the following
@@ -87,6 +88,7 @@ should output:
 Below is a list of releases of ALCF. The version numbers follow
 the [Semantic Versioning](https://semver.org).
 
-#### [1.0.0-beta.1](https://github.com/alcf-lidar/alcf/releases/tag/v1.0.0-beta.1) (2020-04-28) 
+#### [1.0.0-beta.1](https://github.com/alcf-lidar/alcf/releases/tag/v1.0.0-beta.1) (2020-04-28) [[documentation](https://github.com/alcf-lidar/alcf-lidar.github.io/releases/download/v1.0.0-beta.1/alcf-doc-1.0.0-beta.1.zip)]
+
 
 - Initial beta release.
