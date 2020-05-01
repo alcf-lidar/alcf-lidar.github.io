@@ -55,6 +55,7 @@ with [Panoply](https://www.giss.nasa.gov/tools/panoply/),
 To process the observations use the following command:
 
 ```sh
+mkdir -p processed # Create directory "processed".
 alcf auto lidar chm15k raw/chm15k processed/chm15k
 ```
 
@@ -90,6 +91,7 @@ files.
 To process MERRA-2 model data use the following command:
 
 ```sh
+mkdir -p processed # Create directory "processed".
 alcf auto model merra2 chm15k raw/merra2 processed/merra2 \
     point: { 172.686 -43.821 } time: { 2016-07-04T00:00 2016-07-05T00:00 }
 ```
