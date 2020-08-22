@@ -25,7 +25,7 @@ python3-setuptools, python3-pip and eccodes. Install with:
 
 ```sh
 # Debian, Devuan, Ubuntu:
-apt-get install gfortran libexpat-dev m4 libcurl4-openssl-dev zlib1g-dev python3-setuptools python3-pip libeccodes-tools
+apt-get install gfortran libexpat-dev m4 libcurl4-openssl-dev zlib1g-dev python3-setuptools python3-pip libeccodes-tools unzip
 # Fedora:
 yum install make patch g++ gfortran expat-devel m4 libcurl-devel zlib-devel python3-setuptools python3-pip eccodes
 ```
