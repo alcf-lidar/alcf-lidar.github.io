@@ -176,9 +176,17 @@ Unified Model (UM) is supported. The following variables are required:
 - `STASH_m01s00i265` (AREA CLOUD FRACTION IN EACH LAYER)
 - `STASH_m01s00i408` (PRESSURE AT THETA LEVELS AFTER TS)
 - `STASH_m01s00i409` (SURFACE PRESSURE AFTER TIMESTEP)
+- `STASH_m01s16i004` (TEMPERATURE ON THETA LEVELS)
+
+**ALCF <= 1.0.0-beta.2:**
+
 - `STASH_m01s04i205` (CLOUD LIQUID WATER AFTER LS PRECIP)
 - `STASH_m01s04i206` (CLOUD ICE CONTENT AFTER LS PRECIP)
-- `STASH_m01s16i004` (TEMPERATURE ON THETA LEVELS)
+
+**ALCF > 1.0.0-beta.2:**
+
+- `STASH_m01s00i254` (QCL AFTER TIMESTEP)
+- `STASH_m01s00i012` (QCF AFTER TIMESTEP)
 
 The variables should be provided on all theta levels and as high temporal
 sampling as possible (instantaneous). All variables should be dumped together
