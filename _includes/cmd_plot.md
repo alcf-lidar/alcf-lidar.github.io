@@ -16,7 +16,11 @@ Plot types:
 - `backscatter`: plot backscatter
 - `backscatter_hist`: plot backscatter histogram
 - `backscatter_sd_hist`: plot backscatter standard deviation histogram
+- `cl`: plot model cloud area fraction
+- `cli`: plot model mass fraction of cloud ice
 - `cloud_occurrence`: plot cloud occurrence
+- `clw`: plot model mass fraction of cloud liquid water
+- `clw+cli`: plot model mass fraction of cloud liquid water and ice
 
 Options:
 
@@ -43,7 +47,7 @@ Plot command options:
     - `vlog: <value>`: Plot values on logarithmic scale: `true` of `false`.
         Default: `true`.
 - `backscatter_hist`:
-    - `vlim: { <min> <max }`. Value limits (%) or `none` for auto. If `none`
+    - `vlim: { <min> <max> }`. Value limits (%) or `none` for auto. If `none`
         and `vlog` is `none`, `min` is set to 1e-3 if less or equal to zero.
         Default: `none`.
     - `--vlog`: use logarithmic scale for values
@@ -56,6 +60,18 @@ Plot command options:
         automatic. Default: `none`.
     - `zlim: { <min> <max> }`. z axis limits (%) or `none` for
         automatic. Default: `none`.
+- `cl`:
+    - `vlim: { <min> <max> }`. Value limits (%).
+        Default: `{ 0 100 }`.
+    - `vlog: <value>`: Plot values on logarithmic scale: `true` of `false`.
+        Default: `false`.
+    - `zres: <zres>`: Height resolution (m). Default: `50`.
+- `cli`, `clw`, `clw+cli`:
+    - `vlim: { <min> <max> }`. Value limits (%).
+        Default: `{ 1e-6 1e-3 }`.
+    - `vlog: <value>`: Plot values on logarithmic scale: `true` of `false`.
+        Default: `true`.
+    - `zres: <zres>`: Height resolution (m). Default: `50`.
 - `cloud_occurrence`:
     - `colors: { <value>... }`: Line colors.
         Default: `{ #0084c8 #dc0000 #009100 #ffc022 #ba00ff }`
