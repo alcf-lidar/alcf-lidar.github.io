@@ -67,8 +67,8 @@ Plot command options:
         Default: `false`.
     - `zres: <zres>`: Height resolution (m). Default: `50`.
 - `cli`, `clw`, `clw+cli`:
-    - `vlim: { <min> <max> }`. Value limits (%).
-        Default: `{ 1e-6 1e-3 }`.
+    - `vlim: { <min> <max> }`. Value limits (g/kg).
+        Default: `{ 1e-3 1 }`.
     - `vlog: <value>`: Plot values on logarithmic scale: `true` of `false`.
         Default: `true`.
     - `zres: <zres>`: Height resolution (m). Default: `50`.
