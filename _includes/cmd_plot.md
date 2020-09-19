@@ -40,10 +40,13 @@ Plot command options:
 - `backscatter`:
     - `--lr`: plot lidar ratio (LR)
     - `--plot_cloud_mask`: plot cloud mask
-    - `sigma: <value>`: Suppress backscatter less than a number of standard deviations
-        from the mean backscatter (real). Default: `3`.
+    - `sigma: <value>`: Remove of number of standard deviations of backscatter
+        from the mean backscatter (real). Default: `5`.
+    - `remove_bmol: <value>`: Remove molecular backscatter (observed data have
+        to be coupled with model data via the `couple` option of `alcf lidar`).
+        Default: `true`.
     - `vlim: { <min> <max }`. Value limits (10^6 m-1.sr-1).
-        Default: `{ 10 2000 }`.
+        Default: `{ 0.1 200 }`.
     - `vlog: <value>`: Plot values on logarithmic scale: `true` of `false`.
         Default: `true`.
 - `backscatter_hist`:
