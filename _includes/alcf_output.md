@@ -4,6 +4,7 @@ The ALCF output is stored in NetCDF files. Below is a description of variables
 contained in the data files. Variable names follow the
 [CMIP5 standard output](https://pcmdi.llnl.gov/mips/cmip5/docs/standard_output.pdf).
 Time is stored as [Julian date](https://en.wikipedia.org/wiki/Julian_day)
+(fractional number of days since 1 January 4713 BCE 12:00 UTC)
 and can be converted to Unix time (the number of non-leap seconds since
 1970-01-01 00:00 UTC) with the formula `(time - 2440587.5)*86400`.
 
@@ -23,7 +24,7 @@ orog | surface altitude | time | m
 pfull | pressure at model full-levels | time, level | Pa
 ps | surface air pressure | time | Pa
 ta | air temperature | time, level | K
-time | time | time | days since -4712-01-01 12:00
+time | time | time | days since -4713-01-01 12:00 UTC
 zfull | altitude of model full-levels | time, level | m
 
 ### cosp
@@ -38,7 +39,7 @@ backscatter_mol | total attenuated molecular backscatter coefficient | time, lev
 lat | latitude | time | degrees north
 lon | longitude | time | degrees east
 pfull | air pressure | time, level | Pa
-time | time | time | days since -4712-01-01 12:00
+time | time | time | days since -4713-01-01 12:00 UTC
 zfull | height above reference ellipsoid | time, level | m
 
 ### lidar
@@ -53,7 +54,7 @@ backscatter_sd | total attenuated volume backscattering coefficient standard dev
 cbh | cloud base height | time | m
 cloud_mask | cloud mask | time, range | 1
 lr | lidar ratio | time | sr
-time | time | time | days since -4712-01-01 12:00
+time | time | time | days since -4713-01-01 12:00 UTC
 zfull | altitude of full-levels | time, level | m
 
 ### stats
