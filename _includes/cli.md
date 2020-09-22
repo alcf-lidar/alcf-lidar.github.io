@@ -1,8 +1,8 @@
 ## Command line interface
 
-After completing the [installation]({{ "/installation/" | relative_url }}), ALCF commands can be run in
-the terminal with the `alcf` program. The program uses the
-command line argument format [PST](https://github.com/peterkuma/pst)
+After completing the [installation]({{ "/installation/" | relative_url }}), the
+ALCF commands can be run in the terminal with the `alcf` program. The program
+uses the command line argument format [PST](https://github.com/peterkuma/pst)
 for passing complex command line arguments.
 
 ### Synopsis
@@ -15,7 +15,7 @@ for passing complex command line arguments.
 | --- | --- |
 | [auto](cmd_auto.html) | peform automatic processing of model or lidar data |
 | [calibrate](cmd_calibrate.html) | calibrate lidar backscatter |
-| [convert](cmd_convert.html) | convert input instrument or model data to ALCF standard NetCDF |
+| [convert](cmd_convert.html) | convert input instrument or model data to the ALCF standard NetCDF |
 | [lidar](cmd_lidar.html) | process lidar data |
 | [model](cmd_model.html) | extract model data at a point or along a track |
 | [plot](cmd_plot.html) | plot lidar data |
@@ -86,6 +86,6 @@ Model output processing:
 7. `alcf plot backscatter_hist` – plot backscatter histogram calculated in
     step 5.
 
-NetCDF data files generated in each step are described in
+NetCDF data files generated in each step are described in the
 [ALCF output]({{ "/documentation/alcf_output/" | relative_url }}) and can be previewed in
 [Panoply](https://www.giss.nasa.gov/tools/panoply/).
