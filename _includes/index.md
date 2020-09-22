@@ -1,6 +1,12 @@
 
 <div class="abstract">
-ALCF is an open source command line tool for processing of automatic lidar and ceilometer (ALC) data and intercomparison with atmospheric models such as general circulation models (GCMs), numerical weather prediction (NWP) models and reanalyses utilising a lidar simulator based on the <a href="https://www.earthsystemcog.org/projects/cfmip/cosp">COSP</a> instrument simulator framework. ALCs are vertically pointing atmospheric lidars, measuring cloud and aerosol backscatter. The primary focus of ALCF are atmospheric studies of cloud using ALC observations and model cloud validation.
+The ALCF is an open source command line tool for processing of automatic lidar
+and ceilometer (ALC) data and intercomparison with atmospheric models such as
+general circulation models (GCMs), numerical weather prediction (NWP) models and
+reanalyses utilising a lidar simulator based on the <a href="https://www.earthsystemcog.org/projects/cfmip/cosp">COSP</a>
+instrument simulator framework. ALCs are vertically pointing atmospheric lidars,
+measuring cloud and aerosol backscatter. The primary focus of the ALCF are
+atmospheric studies of cloud using ALC observations and model cloud validation.
 <div style="font-weight: normal; text-align: center; margin: 14px 0">
 <a href="https://www.geosci-model-dev-discuss.net/gmd-2020-25/">Paper</a> (in review) &nbsp;|&nbsp; <a href="presentation.pdf">Presentation</a> &nbsp;|&nbsp; Poster <a href="https://zenodo.org/record/3764299">1</a>, <a href="https://zenodo.org/record/3764287">2</a>  &nbsp;|&nbsp; <a href="https://zenodo.org/record/3865850">Thesis</a>
 </div>
@@ -11,7 +17,7 @@ ALCF is an open source command line tool for processing of automatic lidar and c
 
 #### Multiple instruments and models
 
-ALCF can process data from multiple ceilometers and lidars:
+The ALCF can process data from multiple ceilometers and lidars:
 Vaisala [CL31](https://www.vaisala.com/en/products/instruments-sensors-and-other-measurement-devices/weather-stations-and-sensors/cl31), [CL51](https://www.vaisala.com/en/products/instruments-sensors-and-other-measurement-devices/weather-stations-and-sensors/cl51), Lufft [CHM 15k](https://www.lufft.com/products/cloud-height-snow-depth-sensors-288/ceilometer-chm-15k-nimbus-2300/) and Sigma Space [MiniMPL](https://www.micropulselidar.com/). Multiple models
 and reanalyses are supported by the lidar simulator: [AMPS](http://www2.mmm.ucar.edu/rt/amps/), [ERA5](https://www.ecmwf.int/en/forecasts/datasets/reanalysis-datasets/era5), [JRA-55](https://jra.kishou.go.jp/JRA-55/index_en.html), [MERRA-2](https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/), [NZCSM](https://www.nesi.org.nz/case-studies/improving-new-zealands-weather-forecasting-ability) and [UM](https://www.metoffice.gov.uk/research/approach/modelling-systems/unified-model/index).
 
@@ -22,7 +28,7 @@ and reanalyses are supported by the lidar simulator: [AMPS](http://www2.mmm.ucar
 
 #### Resampling and noise removal
 
-ALCF resamples lidar backscatter to chosen temporal and vertical sampling
+The ALCF resamples lidar backscatter to chosen temporal and vertical sampling
 to increase signal-to-noise ratio, calculates noise standard deviation from
 the highest level and removes noise.
 
@@ -85,6 +91,6 @@ calibration of lidar backscatter using fully-opaque stratocumulus scenes
 
 <img src="{{ "/img/osi_mit.png" | relative_url }}" height="100" style="float: left; margin-right: 16px" />
 
-ALCF is available under the terms of the MIT license, which allows free
+The ALCF is available under the terms of the MIT license, which allows free
 use, copying, modification and redistribution.
 
