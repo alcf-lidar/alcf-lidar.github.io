@@ -13,7 +13,7 @@ The following GCM, NWP models and reanalyses are supported:
 (mass fraction of cloud liquid water and ice in air) not available in the
 dataset.
 
-Below is a description of the model output supported by ALCF. You might
+Below is a description of the model output supported by the ALCF. You might
 have to modify the code for reading the model output depending on the
 exact format of the model output, such as variable names and how they are
 split among the output files.
@@ -22,7 +22,7 @@ split among the output files.
 
 **Source:** `alcf/models/amps.py`
 
-ALCF is compatible with the NetCDF AMPS output. You can find the
+The ALCF is compatible with the NetCDF AMPS output. You can find the
 [AMPS archive](https://www.earthsystemgrid.org/project/amps.html) on the
 Earth System Grid (ESG) website. The following files conver 24 hours of model
 output:
@@ -37,7 +37,7 @@ output:
     wrfout_dxx_YYYYmmdd12_f012.nc
 
 where `xx` is the [AMPS grid](http://www2.mmm.ucar.edu/rt/amps/information/configuration/maps_2017101012/maps.html), `YYYYmmdd` is the year (`YYYY`), month (`mm`) and day (`dd`). The `*_f000.nc`
-files are not suitable for use with ALCF as they do not contain all required
+files are not suitable for use with the ALCF as they do not contain all required
 variables.
 
 ### ERA5
@@ -71,7 +71,7 @@ to `alcf model` or `alcf auto model`.
 
 The JRA-55 reanalysis data can be downloaded from the
 [JRA-55 project website](https://jra.kishou.go.jp/JRA-55/index_en.html).
-The following fields are required by ALCF:
+The following fields are required by the ALCF:
 
 - `Const/LL25.grib` (Constant fields)
 - `anl_p125/anl_p125_hgt` (Geopotential height @ Isobaric Surface)
@@ -83,7 +83,7 @@ The following fields are required by ALCF:
 
 Download files for the period of interest all into the same directory.
 The JRA-55 GRIB files have to be converted to NetCDF before they can be
-used with ALCF. Use [grib_to_netcdf](https://confluence.ecmwf.int/display/ECC/grib_to_netcdf)
+used with the ALCF. Use [grib_to_netcdf](https://confluence.ecmwf.int/display/ECC/grib_to_netcdf)
 to convert the data. All data files should reside in the same directory.
 
 ### MERRA-2

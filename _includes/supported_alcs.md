@@ -22,7 +22,7 @@ to convert DAT files to NetCDF.
 
 The 910-nm wavelength band used by CL31 and CL51 is affected by water vapour
 absorption lines ([Wiegner et al., 2019](https://www.atmos-meas-tech.net/12/471/2019/)).
-ALCF currently does not support simulating water vapour absorption,
+The ALCF currently does not support simulating water vapour absorption,
 and it is not taken into account in the calibration process.
 
 ### Sigma Space MiniMPL
@@ -50,7 +50,7 @@ commands `alcf auto lidar` and `alcf lidar` without conversion.
 **Type:** `caliop`
 
 CALIOP is a spaceborne lidar on board of the CNES-NASA satellite CALIPSO.
-ALCF supports lidar simulation of a spaceborne lidar at 532 nm, i.e. it can
+The ALCF supports lidar simulation of a spaceborne lidar at 532 nm, i.e. it can
 produce simulated backscatter profiles from atmospheric model data. Therefore,
 this lidar type can be used with `alcf simulate` and `alcf auto model`,
 but not with `alcf lidar` or `alcf auto lidar`.

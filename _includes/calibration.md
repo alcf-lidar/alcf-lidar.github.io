@@ -1,13 +1,14 @@
 ## Calibration
 
-Depending on the instrument, calibration in ALCF may be an essential part of
-processing ALC data. Ceilometers often report backscatter values in
-arbitrary units which need to be converted to m<sup>-1</sup>.sr<sup>-1</sup> for a reliable
-comparison with the COSP simulator. The recommended calibration method
-in ALCF is [O'Connor et al. (2004)](https://journals.ametsoc.org/doi/abs/10.1175/1520-0426(2004)021%3C0777%3AATFAOC%3E2.0.CO%3B2). The method is based on the fact that the
-lidar ratio in fully opaque liquid stratocumulus profiles is approximately
-constant, depending only on the wavelength of the lidar, assuming the cloud
-droplet size of the stratocumulus cloud is within a certain typical range.
+Depending on the instrument, calibration in the ALCF may be an essential part of
+processing ALC data. Ceilometers often report backscatter values in arbitrary
+units which need to be converted to m<sup>-1</sup>.sr<sup>-1</sup> for a
+reliable comparison with the COSP simulator. The recommended calibration method
+in the ALCF is [O'Connor et al. (2004)](https://journals.ametsoc.org/doi/abs/10.1175/1520-0426(2004)021%3C0777%3AATFAOC%3E2.0.CO%3B2).
+The method is based on the fact that the lidar ratio in fully opaque liquid
+stratocumulus profiles is approximately constant, depending only on the
+wavelength of the lidar, assuming the cloud droplet size of the stratocumulus
+cloud is within a certain typical range.
 
 The calibration steps are outlined below:
 

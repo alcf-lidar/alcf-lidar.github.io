@@ -2,12 +2,12 @@
 
 ### Introduction
 
-ALCF uses a modified version of COSPv1 for lidar simulation, which can
+The ALCF uses a modified version of COSPv1 for lidar simulation, which can
 be found at [github.com/alcf-lidar/COSPv1](https://github.com/alcf-lidar/COSPv1).
 The ACTSIM lidar simulator included in COSP has been modified to account
 for the different viewing geometry and wavelength of a ground-based lidar.
 
-If you want to add support for another lidar in ALCF, you might have to
+If you want to add support for another lidar in the ALCF, you might have to
 calculate Mie scattering parameters for the lidar wavelength, if it
 is different from ones already implemented (532, 910, 1064 nm).
 The code for calculating the parameters is located in
@@ -16,10 +16,10 @@ Below is documentation on how to use this code.
 
 ### Mie scattering code
 
-The `mie_scattering` directory in ALCF contains code for calculation of Mie
+The `mie_scattering` directory in the ALCF contains code for calculation of Mie
 scattering parameters required by the COSP/ACTSIM lidar simulator.
 The code requires Python 3 and GNU Fortran (gfortran) for running.
-The code is independent from the rest of ALCF.
+The code is independent from the rest of the ALCF.
 
 #### Overview
 
