@@ -1,7 +1,7 @@
 
 ## Tutorial
 
-This tutorial shows how to use ALCF to process ceilometer observations,
+This tutorial shows how to use the ALCF to process ceilometer observations,
 simulate lidar from model output and compare the two. As an example,
 we will use 24 hours of Lufft CHM 15k ceilometer observations
 at the Birdlings Flat site in Canterbury, New Zeland on 4 July 2016,
@@ -14,7 +14,7 @@ To start, download the dataset archive
 measurements, such as one month or one year. This tutorial uses 24 hours of
 data due to the large size of the datasets.
 
-Processing with ALCF can be done in two modes: automatic and manual.
+Processing with the ALCF can be done in two modes: automatic and manual.
 The automatic mode is easier and is convered in this tutorial. Both automatic
 and manual processing are equivalent, but manual processing gives you a better
 understanding of the processing steps and can be more useful if anything
@@ -23,7 +23,7 @@ goes wrong during the processing. Please see the
 
 ### Preparation
 
-First, make sure that you have installed ALCF following the [installation
+First, make sure that you have installed the ALCF following the [installation
 instructions]({{ "/installation/" | relative_url }}), and the you can run `alcf` in the
 terminal. Extract the archive `alcf-tutorial-datasets.tar` in your working
 directory:
@@ -74,7 +74,7 @@ be stored in `processed/chm15k`:
 - `stats/all.nc`: statistics (NetCDF)
 
 Figure 1 shows the Lufft CHM 15k plots.
-See [ALCF output]({{ "/documentation/alcf_output/" | relative_url }}) for description of the NetCDF
+See the [ALCF output]({{ "/documentation/alcf_output/" | relative_url }}) for description of the NetCDF
 files.
 
 <figure>
@@ -115,7 +115,7 @@ The output will be stored in `processed/merra2`:
 - `stats/all.nc`: statistics (NetCDF)
 
 Figure 2 shows the MERRA-2 plots.
-See [ALCF output]({{ "/documentation/alcf_output/" | relative_url }}) for description of the NetCDF
+See the [ALCF output]({{ "/documentation/alcf_output/" | relative_url }}) for description of the NetCDF
 files.
 
 <figure>
@@ -135,8 +135,8 @@ TODO
 
 ### Conclusion
 
-This tutorial introduced how to use ALCF to process 24 hours of data
+This tutorial introduced how to use the ALCF to process 24 hours of data
 collected by the Lufft CHM 15k ceilometer and the corresponding data from the
-MERRA-2 reanalysis. ALCF supports more advanced options described in the
+MERRA-2 reanalysis. The ALCF supports more advanced options described in the
 [documentation]({{ "/documentation/" | relative_url }}).
 For support please see the [support]({{ "/support/" | relative_url }}) page.
