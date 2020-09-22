@@ -2,12 +2,12 @@
 
 ### Questions
 
-If you have a question about using ALCF, you can contact me at
+If you have a question about using the ALCF, you can contact me at
 Peter Kuma &lt;peter<span>@</span>peterkuma.net&gt;.
 
 ### Bugs
 
-If you have found a bug in ALCF and want to request a feature,
+If you have found a bug in the ALCF and want to request a feature,
 please [submit a new issue on Github](https://github.com/alcf-lidar/alcf/issues).
 
 ### Contributing
