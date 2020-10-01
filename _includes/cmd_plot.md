@@ -38,8 +38,8 @@ Options:
 Plot command options:
 
 - `backscatter`:
-    - `--lr`: plot lidar ratio (LR)
-    - `--plot_cloud_mask`: plot cloud mask
+    - `lr: <value>`: Plot lidar ratio (LR). Default: `true`.
+    - `cloud_mask: <value>`: plot cloud mask. Default: `true`.
     - `sigma: <value>`: Remove of number of standard deviations of backscatter
         from the mean backscatter (real). Default: `5`.
     - `remove_bmol: <value>`: Remove molecular backscatter (observed data have
