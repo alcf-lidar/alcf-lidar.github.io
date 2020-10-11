@@ -48,9 +48,15 @@ make
 `download_dep` will automatically download required libraries and `build_dep`
 will compile the libraries (it might take up to 5 minutes to finish).
 
-**Note:** The ALCF uses Python libraries [ds-python](https://github.com/peterkuma/ds-python),
+**Note:** The ALCF uses Python libraries
+[numpy](https://numpy.org),
+[scipy](https://www.scipy.org),
+[matplotlib](https://matplotlib.org),
+[netCDF4](http://github.com/Unidata/netcdf4-python),
+[ds-python](https://github.com/peterkuma/ds-python),
 [aquarius-time](https://github.com/peterkuma/aquarius-time),
-[pst](https://github.com/peterkuma/pst) and
+[pst](https://github.com/peterkuma/pst),
+[cl2nc](https://github.com/peterkuma/cl2nc) and
 [astropy](https://www.astropy.org), which are installed with the commands below.
 
 To install in system directories:
