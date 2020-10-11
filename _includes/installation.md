@@ -49,9 +49,9 @@ make
 will compile the libraries (it might take up to 5 minutes to finish).
 
 **Note:** The ALCF uses Python libraries [ds-python](https://github.com/peterkuma/ds-python),
-[aquarius-time](https://github.com/peterkuma/aquarius-time) and
-[pst](https://github.com/peterkuma/pst), which are installed with the commands
-below.
+[aquarius-time](https://github.com/peterkuma/aquarius-time),
+[pst](https://github.com/peterkuma/pst) and
+[astropy](https://www.astropy.org), which are installed with the commands below.
 
 To install in system directories:
 
