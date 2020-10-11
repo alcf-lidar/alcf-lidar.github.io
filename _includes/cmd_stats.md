@@ -14,8 +14,9 @@ Options:
     Default: `{ 5 200 }`.
 - `bres: <value>`: backscatter histogram resolution (1e-6 m-1.sr-1).
     Default: `10`.
-- `filter: <value>`: filter profiles by condition: `cloudy` for cloudy profiles
-    only, `clear` for clear sky profiles only, `none` for all profiles.
+- `filter: <value> | { <value> ... }`: Filter profiles by condition: `cloudy` for
+    cloudy profiles only, `clear` for clear sky profiles only, `none` for all
+    profiles. If an array of values is supplied, all conditions must be true.
     Default: `none`.
 - `tlim: { <start> <end> }`: Time limits (see Time format below).
     Default: `none`.

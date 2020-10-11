@@ -48,6 +48,10 @@ Options:
     Default: `0.7`.
 - `fix_cl_range` (experimental): Fix CL31/CL51 range correction (if `noise_h2`
 	firmware option if off). The critical range is taken from `cl_crit_range`.
+- `lat: <lat>`: Latitude of the instrument (degrees North).
+    Default: Taken from lidar data or `none` if not available.
+- `lon: <lon>`: Longitude of the instrument (degrees East).
+    Default: Taken from lidar data or `none` if not available.
 - `noise_removal: <algorithm>`: Noise removal algorithm.
     Available algorithms: `default`, `none`.  Default: `default`.
 - `output_sampling: <period>`: Output sampling period (seconds).
@@ -64,7 +68,7 @@ Algorithm options:
 - Cloud detection:
     - `default`: cloud detection based on backscatter threshold
         - `cloud_nsd: <n>`: Number of noise standard deviations to subtract.
-        	Default: `3`.
+            Default: `5`.
         - `cloud_threshold: <threshold>`: Cloud detection threshold
             (sr^-1.m^-1). Default: `2e-6`.
 	- `none`: disable cloud detection
