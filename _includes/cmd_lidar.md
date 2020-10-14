@@ -44,8 +44,6 @@ Options:
     Available algorithms: `default`, `none`. Default: `default`.
 - `cloud_base_detection: <algorithm>`: Cloud base detection algorithm.
     Available algorithms: `default`, `none`. Default: `default`.
-- `eta: <eta>`: Multiple-scattering factor to assume in lidar ratio calculation.
-    Default: `0.7`.
 - `fix_cl_range` (experimental): Fix CL31/CL51 range correction (if `noise_h2`
 	firmware option if off). The critical range is taken from `cl_crit_range`.
 - `lat: <lat>`: Latitude of the instrument (degrees North).

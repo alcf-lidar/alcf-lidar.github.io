@@ -38,7 +38,7 @@ Options:
 Plot command options:
 
 - `backscatter`:
-    - `lr: <value>`: Plot lidar ratio (LR). Default: `true`.
+    - `lr: <value>`: Plot effective lidar ratio. Default: `true`.
     - `cloud_mask: <value>`: plot cloud mask. Default: `true`.
     - `sigma: <value>`: Remove of number of standard deviations of backscatter
         from the mean backscatter (real). Default: `5`.
