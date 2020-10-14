@@ -34,7 +34,7 @@ the highest level and removes noise.
 
 <div class="img-flex nospace">
 <div>
-<a href="{{ "/img/rutherford14_2014-03-30T00:00:00.png" | relative_url }}"><img src="{{ "/img/rutherford14_2014-03-30T00:00:00.png" | relative_url }}" width="600" /></a>
+<a href="{{ "/img/rutherford14_2014-03-30T000000.png" | relative_url }}"><img src="{{ "/img/rutherford14_2014-03-30T000000.png" | relative_url }}" width="600" /></a>
 </div>
 </div>
 
@@ -45,8 +45,8 @@ to produce virtual backscatter measurements comparable with ALC observations
 for the purpose of model evaluation.
 
 <div class="img-flex nospace">
-<div><center><strong>Luff CHM 15k observations</strong></center><a href="img/birdlings16_chm15k_2016-07-18T00:00:00.png"><img src="img/birdlings16_chm15k_2016-07-18T00:00:00.png" width="400" /></a></div>
-<div><center><strong>AMPS model simulated lidar</strong></center><a href="img/birdlings16_amps_2016-07-18T00:00:00.png"><img src="img/birdlings16_amps_2016-07-18T00:00:00.png" width="400" /></a></div>
+<div><center><strong>Luff CHM 15k observations</strong></center><a href="img/birdlings16_chm15k_2016-07-18T000000.png"><img src="img/birdlings16_chm15k_2016-07-18T000000.png" width="400" /></a></div>
+<div><center><strong>AMPS model simulated lidar</strong></center><a href="img/birdlings16_amps_2016-07-18T000000.png"><img src="img/birdlings16_amps_2016-07-18T000000.png" width="400" /></a></div>
 </div>
 
 #### Cloud detection
@@ -55,7 +55,7 @@ Cloud detection is done by applying a threshold on the denoised absolute
 backscatter. More sophisticated algorithms may be added in the future.
 
 <div class="img-flex nospace">
-<a href="img/birdlings16_chm15k_cm_2016-07-04T00:00:00.png"><img src="img/birdlings16_chm15k_cm_2016-07-04T00:00:00.png" width
+<a href="img/birdlings16_chm15k_cm_2016-07-04T000000.png"><img src="img/birdlings16_chm15k_cm_2016-07-04T000000.png" width
 ="600" /></a>
 </div>
 
@@ -80,7 +80,7 @@ calibration of lidar backscatter using fully-opaque stratocumulus scenes
 ([O'Connor et al., 2004](https://journals.ametsoc.org/doi/abs/10.1175/1520-0426(2004)021%3C0777%3AATFAOC%3E2.0.CO%3B2)).
 
 <div class="img-flex nospace">
-<a href="img/birdlings16_chm15k_lr_2016-07-16T00:00:00.png"><img src="img/birdlings16_chm15k_lr_2016-07-16T00:00:00.png" width="600" /></a>
+<a href="img/birdlings16_chm15k_lr_2016-07-16T000000.png"><img src="img/birdlings16_chm15k_lr_2016-07-16T000000.png" width="600" /></a>
 </div>
 
 <!--
