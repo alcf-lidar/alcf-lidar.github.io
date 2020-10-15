@@ -96,6 +96,32 @@ the [Semantic Versioning](https://semver.org).
 
 #### [1.0.0-beta.3](https://github.com/alcf-lidar/alcf/releases/tag/v1.0.0-beta.3) (2020-10-15) [[documentation](https://github.com/alcf-lidar/alcf/releases/download/v1.0.0-beta.3/alcf-doc-1.0.0-beta.3.zip)] [DOI: [10.5281/zenodo.4088217](https://doi.org/10.5281/zenodo.4088217)]
 
+<details>
+<summary>Release notes</summary>
+<ul>
+<li>alcf lidar option for coupling of observed data with simulated molecular backscatter.</li>
+<li>Removal of molecular backscatter in plots (if available).</li>
+<li>alcf stats filter option now supports "night" and "day" and passing of multiple arguments.</li>
+<li>New lidar type "default" for re-precessing of already processed lidar data.</li>
+<li>Support for plotting of model cloud liquid water, ice content and cloud fraction.</li>
+<li>Calculation of lidar ratio changed to effective lidar ratio.</li>
+<li>Backscatter plots now show effective lidar ratio and cloud mask by default.</li>
+<li>Changed default vlim for backscatter plots to { 0.1 200 } and default sigma to 5.</li>
+<li>Output files names are now without colons, which are not compatible with Windows.</li>
+<li>More accurate plot labels.</li>
+<li>Improved time sampling: exact profile time bounds are used from weighting.</li>
+<li>Improved handling of errors and stopping with Ctrl+C.</li>
+<li>Improved NetCDF metadata.</li>
+<li>Improved compatibility with newer versions of matplotlib.</li>
+<li>Fixed clearing of figures in alcf plot backscatter.</li>
+</ul>
+</details>
+
 #### [1.0.0-beta.2](https://github.com/alcf-lidar/alcf/releases/tag/v1.0.0-beta.2) (2020-05-01) [[documentation](https://github.com/alcf-lidar/alcf-lidar.github.io/releases/download/v1.0.0-beta.2/alcf-doc-1.0.0-beta.2.zip)] [DOI: [10.5281/zenodo.3779518](https://doi.org/10.5281/zenodo.3779518)]
 
-- Initial beta release.
+<details>
+<summary>Release notes</summary>
+<ul>
+<li>Initial beta release.</li>
+</ul>
+</details>
