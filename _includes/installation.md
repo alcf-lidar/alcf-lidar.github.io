@@ -101,7 +101,7 @@ the [Semantic Versioning](https://semver.org).
 <ul>
 <li>First stable release. No change from 1.0.0-beta.3.</li>
 </ul>
-<details>
+</details>
 
 #### [1.0.0-beta.3](https://github.com/alcf-lidar/alcf/releases/tag/v1.0.0-beta.3) (2020-10-15) [[documentation](https://github.com/alcf-lidar/alcf/releases/download/v1.0.0-beta.3/alcf-doc-1.0.0-beta.3.zip)] [DOI: [10.5281/zenodo.4088217](https://doi.org/10.5281/zenodo.4088217)]
 
