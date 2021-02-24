@@ -13,14 +13,17 @@ Arguments:
 
 Plot types:
 
-- `backscatter`: plot backscatter
-- `backscatter_hist`: plot backscatter histogram
-- `backscatter_sd_hist`: plot backscatter standard deviation histogram
-- `cl`: plot model cloud area fraction
-- `cli`: plot model mass fraction of cloud ice
-- `cloud_occurrence`: plot cloud occurrence
-- `clw`: plot model mass fraction of cloud liquid water
-- `clw+cli`: plot model mass fraction of cloud liquid water and ice
+- `backscatter`: plot backscatter from `alcf lidar` output
+- `backscatter_hist`: plot backscatter histogram from `alcf stats` output
+- `backscatter_sd_hist`: plot backscatter standard deviation histogram from
+  `alcf stats` output
+- `cl`: plot model cloud area fraction from `alcf lidar` output
+- `cli`: plot model mass fraction of cloud ice from `alcf lidar` output
+- `cloud_occurrence`: plot cloud occurrence from `alcf stats` output
+- `clw`: plot model mass fraction of cloud liquid water from `alcf lidar`
+  output
+- `clw+cli`: plot model mass fraction of cloud liquid water and ice from
+  `alcf lidar` output
 
 Options:
 
@@ -84,4 +87,11 @@ Plot command options:
     - `lw: <value>`: Line width. Default: `1`.
     - `xlim: { <min> <max> }`: x axis limits (%). Default: `{ 0 100 }`.
     - `zlim: { <min> <max> }`: z axis limits (m). Default: `{ 0 15 }`.
+
+Examples:
+
+Plot backscatter from processed Vaisala CL51 data in `alcf_cl51_lidar`
+and store the output in the directory `alcf_cl51_backscatter`.
+
+    alcf plot backscatter alcf_cl51_lidar alcf_cl51_backscatter
 	
