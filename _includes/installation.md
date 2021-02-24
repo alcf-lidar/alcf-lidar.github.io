@@ -88,6 +88,15 @@ should output:
 Below is a list of releases of the ALCF. The version numbers follow
 the [Semantic Versioning](https://semver.org).
 
+#### [1.0.1](https://github.com/alcf-lidar/alcf/releases/tag/v1.0.1) (2021-02-24)
+
+<details>
+<summary>Release notes</summary>
+<ul>
+<li>Fixed download links to dependencies (udunits archive was removed upstream).</li>
+</ul>
+</details>
+
 #### [1.0.0](https://github.com/alcf-lidar/alcf/releases/tag/v1.0.0) (2021-01-02) [[documentation](https://github.com/alcf-lidar/alcf/releases/download/v1.0.0/alcf-doc-1.0.0.zip)] [DOI: [10.5281/zenodo.4411633](https://doi.org/10.5281/zenodo.4411633)]
 
 <details>
