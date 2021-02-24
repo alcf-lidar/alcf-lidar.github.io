@@ -55,25 +55,19 @@ will compile the libraries (it might take up to 5 minutes to finish).
 [netCDF4](http://github.com/Unidata/netcdf4-python),
 [ds-python](https://github.com/peterkuma/ds-python),
 [aquarius-time](https://github.com/peterkuma/aquarius-time),
-[pst](https://github.com/peterkuma/pst),
+[pst-format](https://github.com/peterkuma/pst),
 [cl2nc](https://github.com/peterkuma/cl2nc) and
 [astropy](https://www.astropy.org), which are installed with the commands below.
 
 To install in system directories:
 
 ```sh
-pip3 install https://github.com/peterkuma/ds-python/archive/master.zip \
-    https://github.com/peterkuma/aquarius-time/archive/master.zip \
-    https://github.com/peterkuma/pst/archive/master.zip
 python3 setup.py install
 ```
 
 To install in user directories (make sure `~/.local/bin` is in the environmental variable `PATH`):
 
 ```sh
-pip3 install --user https://github.com/peterkuma/ds-python/archive/master.zip \
-    https://github.com/peterkuma/aquarius-time/archive/master.zip \
-    https://github.com/peterkuma/pst/archive/master.zip
 python3 setup.py install --user
 ```
 
