@@ -2,8 +2,8 @@
 
 ### Questions
 
-If you have a question about using the ALCF, you can contact me at
-Peter Kuma &lt;peter<span>@</span>peterkuma.net&gt;.
+If you have a question about using the ALCF, you can contact Peter Kuma at
+&lt;peter<span>@</span>peterkuma.net&gt;.
 
 ### Bugs
 
