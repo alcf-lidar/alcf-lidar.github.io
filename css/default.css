@@ -129,6 +129,10 @@ footer {
 	clear: both;
 }
 
+footer p {
+	margin: 4px 0;
+}
+
 pre.highlight {
 	padding: 4px 8px;
 	overflow: auto;
