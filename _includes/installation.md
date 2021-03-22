@@ -2,8 +2,7 @@
 ## Installation
 
 The ALCF is written in Python and Fortran. Installation on Linux is recommended.
-Installation on other operating systems may be possible and planned in the
-future, but is not described here at the moment.
+Installation on Windows is possible under the "Windows Subsystem for Linux".
 
 ### Linux
 
@@ -82,6 +81,21 @@ should output:
 ```
 {% include cmd_main.md %}
 ```
+
+### Windows
+
+Installation on Windows is possible under the "Windows Subsystem for Linux".
+
+1. Install "Ubuntu" from the Microsoft Store. You might have to enable
+"Windows Subsystem for Linux" under "Windows Features" first.
+
+2. Open "Ubuntu" from the Start Menu and follow the instructions above for
+installation on Linux (Ubuntu). Use `cd /mnt/c/Users/<users>`, where `<user>`
+is your Windows user name, to change the current directory to your home
+directory, and `ls` to list the directory contents. Note that the alcf
+release archive has to be extracted in the Ubuntu console in order to preserve
+symbolic links: use the command `tar xf alcf-<version>.tar.gz`, where
+`<version>` is the version string of the release you have downloaded.
 
 ## Releases
 
