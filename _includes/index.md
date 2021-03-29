@@ -89,8 +89,6 @@ calibration of lidar backscatter using fully-opaque stratocumulus scenes
 
 #### Open source
 
-<img src="{{ "/img/osi_mit.png" | relative_url }}" height="100" style="float: left; margin-right: 16px" />
-
 The ALCF is available under the terms of the MIT license, which allows free
 use, copying, modification and redistribution.
 
