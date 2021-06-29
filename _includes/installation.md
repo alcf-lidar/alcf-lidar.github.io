@@ -102,7 +102,7 @@ symbolic links: use the command `tar xf alcf-<version>.tar.gz`, where
 Below is a list of releases of the ALCF. The version numbers follow
 the [Semantic Versioning](https://semver.org).
 
-#### [1.1.0](https://github.com/alcf-lidar/alcf/releases/tag/v1.1.1) (2021-06-29)
+#### [1.1.0](https://github.com/alcf-lidar/alcf/releases/tag/v1.1.0) (2021-06-29)
 
 <details>
 <summary>Release notes</summary>
