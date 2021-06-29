@@ -15,6 +15,7 @@ Arguments:
 Options:
 
 `--help`: print help for command
+`--debug`: Enable debugging information.
 
 Commands:
 

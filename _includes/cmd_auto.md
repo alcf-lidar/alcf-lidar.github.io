@@ -69,10 +69,12 @@ Model types:
 
 Lidar types:
 
+- `blview`: Vaisala BL-VIEW L2 product
 - `caliop`: CALIPSO/CALIOP (`alcf auto model` only)
 - `chm15k`: Lufft CHM 15k
 - `cl31`: Vaisala CL31
 - `cl51`: Vaisala CL51
+- `cl61`: Vaisala CL61
 - `cosp`: COSP simulated lidar
 - `minimpl`: Sigma Space MiniMPL
 - `mpl`: Sigma Space MPL (converted via SigmaMPL)
