@@ -91,7 +91,7 @@ should output:
 
 Below is a list of releases of the ALCF. The version numbers follow
 the [Semantic Versioning](https://semver.org). Installation instructions
-have been chaging with versions. Please follow the installation instructions
+have been changing with versions. Please follow the installation instructions
 in the documentation of the particular version.
 
 #### [1.1.0](https://github.com/alcf-lidar/alcf/releases/tag/v1.1.0) (2021-06-29) [[documentation](https://github.com/alcf-lidar/alcf/releases/download/v1.1.0/alcf-doc-1.1.0.zip)] [DOI: [10.5281/zenodo.5153867](https://zenodo.org/record/5153867)]
@@ -130,7 +130,7 @@ in the documentation of the particular version.
 <li>alcf lidar option for coupling of observed data with simulated molecular backscatter.</li>
 <li>Removal of molecular backscatter in plots (if available).</li>
 <li>alcf stats filter option now supports "night" and "day" and passing of multiple arguments.</li>
-<li>New lidar type "default" for re-precessing of already processed lidar data.</li>
+<li>New lidar type "default" for re-processing of already processed lidar data.</li>
 <li>Support for plotting of model cloud liquid water, ice content and cloud fraction.</li>
 <li>Calculation of lidar ratio changed to effective lidar ratio.</li>
 <li>Backscatter plots now show effective lidar ratio and cloud mask by default.</li>
