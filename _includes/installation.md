@@ -46,7 +46,7 @@ Installation on Windows is possible under the "Windows Subsystem for Linux".
 "Windows Subsystem for Linux" under "Windows Features" first.
 
 2. Open "Ubuntu" from the Start Menu and follow the instructions above for
-installation on [Linux](#linux) (Ubuntu). Use `cd /mnt/c/Users/<users>`, where `<user>`
+installation on [Linux](#linux) (Ubuntu). Use `cd /mnt/c/Users/<user>`, where `<user>`
 is your Windows user name, to change the current directory to your home
 directory, and `ls` to list the directory contents.
 
