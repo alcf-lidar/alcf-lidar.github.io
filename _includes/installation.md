@@ -3,8 +3,8 @@
 Supported operating systems:
 
 * [Linux](#linux) (recommended)
-* [macOS](#macos)
 * [Windows](#windows) with the Windows Subsystem for Linux (Ubuntu)
+* [macOS](#macos)
 
 ### Linux
 
