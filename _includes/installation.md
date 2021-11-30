@@ -1,76 +1,81 @@
-
 ## Installation
 
-The ALCF is written in Python and Fortran. Installation on Linux is recommended.
-Installation on Windows is possible under the "Windows Subsystem for Linux".
+Supported operating systems:
+
+* [Linux](#linux) (recommended)
+* [macOS](#macos)
+* [Windows](#windows) with the Windows Subsystem for Linux (Ubuntu)
 
 ### Linux
 
-The installation has been tested on [Debian GNU/Linux](https://www.debian.org/) 10, [Devuan GNU/Linux](https://devuan.org/) 2.1,
-[Ubuntu](https://ubuntu.com/) Desktop 19.10 and [Fedora](https://getfedora.org/) 31 Workstation.
+The instructions below assume that you enter the commands in the terminal.
 
-Install the following required software:
+1. Install required programs and libraries:
 
-- gfortran and gcc (usually available in Linux distribution repositories)
-- Python 3 (usually pre-installed on Linux distributions)
+    On Debian-based Linux distributions (Ubuntu, Debian, Devuan, ...), install
+    dependencies with:
 
-Download and unpack one of the [releases](#releases)
-or the [latest development version](https://github.com/peterkuma/alcf/archive/master.zip)
-of the ALCF and run commands below in the unpacked directory.
+    ```sh
+    sudo apt install gcc make gfortran libhdf5-dev libnetcdf-dev \
+        libnetcdff-dev python3 python3-setuptools python3-pip
+    ```
 
-Before compiling the dependencies, you might need to install the following
-packages: gfortran, libexpat-dev, m4, libcurl4-openssl-dev and zlib1g-dev,
-python3-setuptools, python3-pip and eccodes. Install with:
+    On Fedora, install dependencies with:
 
-```sh
-# Debian, Devuan, Ubuntu:
-apt-get install gfortran libexpat-dev m4 libcurl4-openssl-dev zlib1g-dev python3-setuptools python3-pip libeccodes-tools unzip
-# Fedora:
-yum install make patch g++ gfortran expat-devel m4 libcurl-devel zlib-devel python3-setuptools python3-pip eccodes
-```
+    ```sh
+    sudo yum install make gcc gfortran hdf5-devel netcdf-devel \
+        netcdf-fortran-devel python3-setuptools python3-pip
+    ```
 
-To download and build dependencies
-([UDUNITS](https://www.unidata.ucar.edu/software/udunits/),
-[NetCDF](https://www.unidata.ucar.edu/software/netcdf/),
-[NetCDF-Fortran](https://www.unidata.ucar.edu/software/netcdf/docs-fortran/),
-[OSSP uuid](http://www.ossp.org/pkg/lib/uuid/),
-[HDF5](https://www.hdfgroup.org/solutions/hdf5),
-[CMOR](https://pcmdi.github.io/cmor-site/),
-[COSP](https://github.com/alcf-lidar/COSPv1)):
+2. Install ALCF with:
 
-```sh
-./download_dep
-./build_dep
-make
-```
+    ```sh
+    # To install globally:
+    sudo pip3 install alcf --upgrade
 
-`download_dep` will automatically download required libraries and `build_dep`
-will compile the libraries (it might take up to 5 minutes to finish).
+    # To install in the user's home directory
+    # (make sure "$HOME/.local/bin" is in the PATH environment variable):
+    pip3 install alcf --upgrade --user
+    ```
 
-**Note:** The ALCF uses Python libraries
-[numpy](https://numpy.org),
-[scipy](https://www.scipy.org),
-[matplotlib](https://matplotlib.org),
-[netCDF4](http://github.com/Unidata/netcdf4-python),
-[ds-python](https://github.com/peterkuma/ds-python),
-[aquarius-time](https://github.com/peterkuma/aquarius-time),
-[pst-format](https://github.com/peterkuma/pst),
-[cl2nc](https://github.com/peterkuma/cl2nc) and
-[astropy](https://www.astropy.org), which are installed with the commands below.
+### Windows
 
-To install in system directories:
+Installation on Windows is possible under the "Windows Subsystem for Linux".
 
-```sh
-python3 setup.py install
-```
+1. Install "Ubuntu" from the Microsoft Store. You might have to enable
+"Windows Subsystem for Linux" under "Windows Features" first.
 
-To install in user directories (make sure `~/.local/bin` is in the environmental variable `PATH`):
+2. Open "Ubuntu" from the Start Menu and follow the instructions above for
+installation on [Linux](#linux) (Ubuntu). Use `cd /mnt/c/Users/<users>`, where `<user>`
+is your Windows user name, to change the current directory to your home
+directory, and `ls` to list the directory contents.
 
-```sh
-python3 setup.py install --user
-```
+### macOS
 
-You should now be able to run the ALCF in the terminal:
+The installation has been tested on macOS Monterey Intel. Installation on Apple
+M1 may be possible but is untested.
+
+1. Install [Anaconda](https://anaconda.org).
+
+2. Install [MacPorts](https://www.macports.org).
+
+3. Install required MacPorts packages:
+
+    ```sh
+    sudo port install gcc11 hdf5 netcdf netcdf-fortran
+    sudo port select --set gcc mp-gcc11
+    ```
+
+4. Install ALCF with:
+
+    ```sh
+    pip install alcf
+    ```
+
+### Post-installation
+
+After completing the installation, you should be able to run the ALCF in the
+terminal:
 
 ```sh
 alcf
@@ -82,25 +87,12 @@ should output:
 {% include cmd_main.md %}
 ```
 
-### Windows
-
-Installation on Windows is possible under the "Windows Subsystem for Linux".
-
-1. Install "Ubuntu" from the Microsoft Store. You might have to enable
-"Windows Subsystem for Linux" under "Windows Features" first.
-
-2. Open "Ubuntu" from the Start Menu and follow the instructions above for
-installation on Linux (Ubuntu). Use `cd /mnt/c/Users/<users>`, where `<user>`
-is your Windows user name, to change the current directory to your home
-directory, and `ls` to list the directory contents. Note that the alcf
-release archive has to be extracted in the Ubuntu console in order to preserve
-symbolic links: use the command `tar xf alcf-<version>.tar.gz`, where
-`<version>` is the version string of the release you have downloaded.
-
 ## Releases
 
 Below is a list of releases of the ALCF. The version numbers follow
-the [Semantic Versioning](https://semver.org).
+the [Semantic Versioning](https://semver.org). Installation instructions
+have been chaging with versions. Please follow the installation instructions
+in the documentation of the particular version.
 
 #### [1.1.0](https://github.com/alcf-lidar/alcf/releases/tag/v1.1.0) (2021-06-29) [[documentation](https://github.com/alcf-lidar/alcf/releases/download/v1.1.0/alcf-doc-1.1.0.zip)] [DOI: [10.5281/zenodo.5153867](https://zenodo.org/record/5153867)]
 
