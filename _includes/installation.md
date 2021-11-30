@@ -1,10 +1,13 @@
 ## Installation
 
-Supported operating systems:
+Below you can find installation instructions for supported operating systems:
 
 * [Linux](#linux) (recommended)
 * [Windows](#windows) with the Windows Subsystem for Linux (Ubuntu)
 * [macOS](#macos)
+
+You can also [build the ALCF from the source code](#building-from-the-source-code)
+if you want to modify any of its parts.
 
 ### Linux
 
@@ -27,7 +30,7 @@ The instructions below assume that you enter the commands in the terminal.
         netcdf-fortran-devel python3-setuptools python3-pip
     ```
 
-2. Install ALCF with:
+2. Install the ALCF with:
 
     ```sh
     # To install globally:
@@ -66,14 +69,15 @@ M1 may be possible but is untested.
     sudo port select --set gcc mp-gcc11
     ```
 
-4. Install ALCF with:
+4. Install the ALCF with:
 
     ```sh
     pip install alcf
     ```
 
 On macOS, the default shell zsh does not work with the command-line syntax
-of ALCF. It is highly recommeded to run any `alcf` commands in the `bash` shell:
+of the ALCF. It is highly recommeded to run any `alcf` commands in the `bash`
+shell:
 
 ```sh
 % bash
@@ -95,6 +99,21 @@ should output:
 ```
 {% include cmd_main.md %}
 ```
+
+### Building from the source code
+
+If you want to build the ALCF from the source code, run the following commands
+in the source code directory:
+
+```sh
+./download_cosp
+pip install .
+```
+
+This will download and unpack [ALCF-COSP](https://github.com/alcf-lidar/alcf-cosp)
+(a version of COSP with support for ground-based lidars), and compile and
+install the ALCF. Use this option if you want to customise any parts of the
+ALCF.
 
 ## Releases
 
