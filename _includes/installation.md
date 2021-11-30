@@ -94,6 +94,15 @@ the [Semantic Versioning](https://semver.org). Installation instructions
 have been changing with versions. Please follow the installation instructions
 in the documentation of the particular version.
 
+#### 1.1.2 (2021-11-30)
+
+<details>
+<summary>Release notes</summary>
+<ul>
+<li>Simplified installation by removing a dependency on CMOR.</li>
+</ul>
+</details>
+
 #### [1.1.0](https://github.com/alcf-lidar/alcf/releases/tag/v1.1.0) (2021-06-29) [[documentation](https://github.com/alcf-lidar/alcf/releases/download/v1.1.0/alcf-doc-1.1.0.zip)] [DOI: [10.5281/zenodo.5153867](https://zenodo.org/record/5153867)]
 
 <details>
