@@ -48,10 +48,19 @@ Installation on Windows is possible under the "Windows Subsystem for Linux".
 1. Install "Ubuntu" from the Microsoft Store. You might have to enable
 "Windows Subsystem for Linux" under "Windows Features" first.
 
-2. Open "Ubuntu" from the Start Menu and follow the instructions above for
-installation on [Linux](#linux) (Ubuntu). Use `cd /mnt/c/Users/<user>`, where `<user>`
-is your Windows user name, to change the current directory to your home
-directory, and `ls` to list the directory contents.
+2. Open "Ubuntu" from the Start Menu. Update packages with:
+
+    ```sh
+    apt update
+    apt upgrade
+    ```
+
+	Follow the instructions above for installation on [Linux](#linux)
+	(Debian-based distributions).
+
+	Note: You can use `cd /mnt/c/Users/<user>`, where `<user>` is your Windows
+	user name to change the current directory to your home directory, and `ls`
+	to list the directory contents.
 
 ### macOS
 
