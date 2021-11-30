@@ -72,6 +72,15 @@ M1 may be possible but is untested.
     pip install alcf
     ```
 
+On macOS, the default shell zsh does not work with the command-line syntax
+of ALCF. It is highly recommeded to run any `alcf` commands in the `bash` shell:
+
+```sh
+% bash
+bash-3.2$ alcf
+...
+```
+
 ### Post-installation
 
 After completing the installation, you should be able to run the ALCF in the
