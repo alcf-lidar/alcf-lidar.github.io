@@ -116,13 +116,22 @@ in the source code directory:
 
 ```sh
 ./download_cosp
-pip install .
+pip3 install .
+# Replace "pip3" with "pip" if you are using Anaconda.
 ```
 
 This will download and unpack [ALCF-COSP](https://github.com/alcf-lidar/alcf-cosp)
 (a version of COSP with support for ground-based lidars), and compile and
 install the ALCF. Use this option if you want to customise any parts of the
 ALCF.
+
+You can also use the following command to continusly change code and have
+changes applied in the alcf command without re-installing:
+
+```sh
+python3 setup.py develop
+# Replace "python3" with "python" if you are using Anaconda.
+```
 
 ## Releases
 
