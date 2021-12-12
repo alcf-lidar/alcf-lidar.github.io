@@ -1,9 +1,8 @@
 ---
 title: alcf stats
-layout: default
+layout: cmd
 ---
 
 ### [Command line interface]({{ "/documentation/cli/" | relative_url }})
-## alcf stats
 
 {% include cmd_stats.md %}

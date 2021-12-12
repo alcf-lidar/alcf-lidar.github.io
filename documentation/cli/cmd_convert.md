@@ -1,9 +1,8 @@
 ---
 title: alcf convert
-layout: default
+layout: cmd
 ---
 
 ### [Command line interface]({{ "/documentation/cli/" | relative_url }})
-## alcf convert
 
 {% include cmd_convert.md %}

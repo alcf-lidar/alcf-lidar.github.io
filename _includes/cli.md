@@ -5,22 +5,19 @@ ALCF commands can be run in the terminal with the `alcf` program. The program
 uses the command line argument format [PST](https://github.com/peterkuma/pst)
 for passing complex command line arguments.
 
-### Synopsis
-
-{% include cmd_main.md %}
-
 ### Commands
 
 | Command | Description |
 | --- | --- |
-| [auto](cmd_auto.html) | peform automatic processing of model or lidar data |
-| [calibrate](cmd_calibrate.html) | calibrate lidar backscatter |
-| [convert](cmd_convert.html) | convert input instrument or model data to the ALCF standard NetCDF |
-| [lidar](cmd_lidar.html) | process lidar data |
-| [model](cmd_model.html) | extract model data at a point or along a track |
-| [plot](cmd_plot.html) | plot lidar data |
-| [simulate](cmd_simulate.html) | simulate lidar measurements from model data using COSP |
-| [stats](cmd_stats.html) | calculate cloud occurrence statistics |
+| [alcf](cmd_main.html) | the main command |
+| [alcf auto](cmd_auto.html) | peform automatic processing of model or lidar data |
+| [alcf calibrate](cmd_calibrate.html) | calibrate lidar backscatter |
+| [alcf convert](cmd_convert.html) | convert input instrument or model data to the ALCF standard NetCDF |
+| [alcf lidar](cmd_lidar.html) | process lidar data |
+| [alcf model](cmd_model.html) | extract model data at a point or along a track |
+| [alcf plot](cmd_plot.html) | plot lidar data |
+| [alcf simulate](cmd_simulate.html) | simulate lidar measurements from model data using COSP |
+| [alcf stats](cmd_stats.html) | calculate cloud occurrence statistics |
 
 <!-- | [compare](cmd_compare.html) | TODO | -->
 

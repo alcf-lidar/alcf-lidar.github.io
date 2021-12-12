@@ -1,9 +1,8 @@
 ---
 title: alcf compare
-layout: default
+layout: cmd
 ---
 
 ### [Command line interface]({{ "/documentation/cli/" | relative_url }})
-## alcf compare
 
 {% include cmd_compare.md %}

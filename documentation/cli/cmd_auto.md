@@ -1,9 +1,8 @@
 ---
 title: alcf auto
-layout: default
+layout: cmd
 ---
 
 ### [Command line interface]({{ "/documentation/cli/" | relative_url }})
-## alcf auto
 
 {% include cmd_auto.md %}

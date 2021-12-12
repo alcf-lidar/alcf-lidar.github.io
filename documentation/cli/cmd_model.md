@@ -1,9 +1,8 @@
 ---
 title: alcf model
-layout: default
+layout: cmd
 ---
 
 ### [Command line interface]({{ "/documentation/cli/" | relative_url }})
-## alcf model
 
 {% include cmd_model.md %}

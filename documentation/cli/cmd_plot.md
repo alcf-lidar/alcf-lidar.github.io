@@ -1,9 +1,8 @@
 ---
 title: alcf plot
-layout: default
+layout: cmd
 ---
 
 ### [Command line interface]({{ "/documentation/cli/" | relative_url }})
-## alcf plot
 
 {% include cmd_plot.md %}

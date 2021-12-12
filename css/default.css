@@ -84,8 +84,9 @@ h3 {
 }
 
 h4 {
-	margin-top: 24px;
-	margin-bottom: 16px;
+	font-size: 18px;
+	margin-top: 20px;
+	margin-bottom: 12px;
 }
 
 p {
@@ -134,8 +135,9 @@ footer p {
 }
 
 pre.highlight {
-	padding: 4px 8px;
+	margin: 4px 8px;
 	overflow: auto;
+	white-space: pre-wrap;
 }
 
 .img-flex {
@@ -176,3 +178,17 @@ figure {
 	text-align: center;
 }
 
+article h1 {
+	font-size: 24px;
+	line-height: 140%;
+	font-weight: 100;
+	margin-top: 24px;
+	margin-bottom: 16px;
+	text-align: left;
+}
+
+article h2 {
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 12px;
+}
