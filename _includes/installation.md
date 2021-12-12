@@ -140,6 +140,16 @@ the [Semantic Versioning](https://semver.org). Installation instructions
 have been changing with versions. Please follow the installation instructions
 in the documentation of the particular version.
 
+#### [1.1.3](https://github.com/alcf-lidar/alcf/releases/tag/v1.1.3) (2021-12-12)
+
+<details>
+<summary>Release notes</summary>
+<ul>
+<li>Use proleptic Gregorian calendar for time variables.</li>
+<li>Include required fonts.</li>
+</ul>
+</details>
+
 #### [1.1.2](https://github.com/alcf-lidar/alcf/releases/tag/v1.1.2) (2021-11-30)
 
 <details>
