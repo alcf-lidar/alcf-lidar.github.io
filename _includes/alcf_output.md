@@ -6,8 +6,8 @@ contained in the data files. Variable names follow the
 Time is stored as [Julian date](https://en.wikipedia.org/wiki/Julian_day)
 (fractional number of days since -4712-01-01 12:00 UTC, or -4713-11-24 12:00
 UTC in the proleptic Gregorian calendar) and can be converted to Unix time (the
-number of non-leap seconds since 1970-01-01 00:00 UTC) with the formula `(time
-- 2440587.5)*86400`.
+number of non-leap seconds since 1970-01-01 00:00 UTC) with the formula
+`(time - 2440587.5)*86400`.
 
 ### model
 
