@@ -35,8 +35,8 @@ at a given location over a length of time or along a ship track.
 
 Variable | Description | Dimensions | Units
 --- | --- | --- | ---
-backscatter | total attenuated backscatter coefficient | time, level, column | m<sup>-1</sup>.sr<sup>-1</sup>
-backscatter_mol | total attenuated molecular backscatter coefficient | time, level | m<sup>-1</sup>.sr<sup>-1</sup>
+backscatter | total attenuated volume backscattering coefficient | time, level, column | m<sup>-1</sup>.sr<sup>-1</sup>
+backscatter_mol | total attenuated molecular volume backscattering coefficient | time, level | m<sup>-1</sup>.sr<sup>-1</sup>
 lat | latitude | time | degrees north
 lon | longitude | time | degrees east
 pfull | air pressure | time, level | Pa
